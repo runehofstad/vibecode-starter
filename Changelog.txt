@@ -1,0 +1,17 @@
+# Changelog
+
+[2025-01-19] - Created optimized CLAUDE.md file for Claude Code project standards (commit: pending)
+[2025-01-19] - Created personal ~/.claude/CLAUDE.md with developer preferences (commit: pending)
+[2025-01-19] - Created Supabase CLI cheat sheet (commit: pending)
+[2025-01-19] - Created Expo & EAS CLI cheat sheet (commit: pending)
+[2025-01-19] - Created project setup cheat sheet for React/RN projects (commit: pending)
+[2025-01-19] - Created Git workflow cheat sheet with conventional commits (commit: pending)
+[2025-01-19] - Added Context7 integration to CLAUDE.md for up-to-date documentation (commit: pending)
+[2025-01-19] - Created Context7 workflow guide for documentation management (commit: pending)
+[2025-01-19] - Created setup script for quick project initialization (commit: pending)
+[2025-01-19] - Created comprehensive user guide in Norwegian (BRUKERVEILEDNING.md) (commit: pending)
+[2025-01-19] - Created step-by-step new project guide (NYTT-PROSJEKT-GUIDE.md) (commit: pending)
+[2025-01-19] - Created installation guide (INSTALLASJON.md) (commit: pending)
+[2025-01-19] - Renamed folder from "Claude code General Questions" to "CLAUDE CODE STARTER" (commit: pending)
+[2025-01-19] - Updated all file paths to reflect new folder name (commit: pending)
+[2025-01-19] - Translated all documentation to English for international release (commit: pending)
