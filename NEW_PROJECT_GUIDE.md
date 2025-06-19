@@ -180,7 +180,7 @@ Begin with core functionality, expand later:
 1. **Testing**: "Set up testing with Jest and React Testing Library"
 2. **CI/CD**: "Configure GitHub Actions for testing and deployment"
 3. **Documentation**: "Create README with installation and usage"
-4. **Deployment**: "Prepare for deployment to Vercel"
+4. **Deployment**: "Prepare for deployment to Vercel/Firebase/AWS Amplify"
 
 ### Feature Development
 ```bash

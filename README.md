@@ -27,6 +27,7 @@ CLAUDE CODE STARTER/
     ├── expo-eas-cheatsheet.md
     ├── react-native-cheatsheet.md
     ├── project-setup-cheatsheet.md
+    ├── deployment-cheatsheet.md
     ├── git-workflow-cheatsheet.md
     └── context7-workflow.md
 ```
@@ -73,7 +74,7 @@ This starter is optimized for:
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
 - **Backend**: Supabase (PostgreSQL, Auth, Storage, Edge Functions)
 - **Testing**: Jest, React Testing Library, Playwright
-- **Deployment**: Vercel, Netlify, Firebase Hosting
+- **Deployment**: Vercel, Firebase Hosting, AWS Amplify
 
 ### Mobile Development
 - **React Native with Expo** (Recommended)

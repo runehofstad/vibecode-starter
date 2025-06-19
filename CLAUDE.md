@@ -98,7 +98,7 @@ src/
 ## Deployment
 
 ### Web
-- **Hosting:** Vercel, or Firebase Hosting
+- **Hosting:** Vercel, Firebase Hosting, or AWS Amplify
 - **CI/CD:** Automated testing and deployment on merge
 
 ### Mobile

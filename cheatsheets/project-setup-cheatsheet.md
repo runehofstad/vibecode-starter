@@ -242,8 +242,11 @@ npm run test:e2e
 # Web - Vercel
 vercel --prod
 
-# Web - Netlify
-netlify deploy --prod
+# Web - AWS Amplify
+amplify publish
+
+# Web - Firebase
+firebase deploy
 
 # Mobile - EAS
 eas build --platform all
