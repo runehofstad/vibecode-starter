@@ -15,3 +15,4 @@
 [2025-01-19] - Renamed folder from "Claude code General Questions" to "CLAUDE CODE STARTER" (commit: pending)
 [2025-01-19] - Updated all file paths to reflect new folder name (commit: pending)
 [2025-01-19] - Translated all documentation to English for international release (commit: pending)
+[2025-01-19] - Enhanced mobile development support with dedicated guide and cheat sheet (commit: pending)

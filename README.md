@@ -18,12 +18,14 @@ CLAUDE CODE STARTER/
 ├── CLAUDE.md                    # Project standards
 ├── USER_GUIDE.md               # Complete user guide
 ├── NEW_PROJECT_GUIDE.md        # Step-by-step startup
+├── MOBILE_APP_GUIDE.md         # Mobile development guide
 ├── INSTALLATION.md             # Installation guide
 ├── scripts/
 │   └── setup-project.sh        # Automatic project setup
 └── cheatsheets/
     ├── supabase-cli-cheatsheet.md
     ├── expo-eas-cheatsheet.md
+    ├── react-native-cheatsheet.md
     ├── project-setup-cheatsheet.md
     ├── git-workflow-cheatsheet.md
     └── context7-workflow.md
@@ -66,11 +68,22 @@ claude
 ## 💡 Technology Stack
 
 This starter is optimized for:
+
+### Web Development
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
 - **Backend**: Supabase (PostgreSQL, Auth, Storage, Edge Functions)
-- **Mobile**: React Native with Expo
 - **Testing**: Jest, React Testing Library, Playwright
-- **DevOps**: GitHub Actions, Vercel/Netlify
+- **Deployment**: Vercel, Netlify, Firebase Hosting
+
+### Mobile Development
+- **React Native with Expo** (Recommended)
+  - Cross-platform iOS & Android
+  - Over-the-air updates
+  - EAS Build & Submit
+- **Native iOS**: Swift 6+ with SwiftUI
+- **Native Android**: Kotlin
+- **Flutter**: Dart with Material Design
+- **Testing**: Detox, XCTest, Espresso
 
 ## 🌍 International Features
 
@@ -83,6 +96,7 @@ This starter is optimized for:
 
 - **USER_GUIDE.md** - Everything you need to know
 - **NEW_PROJECT_GUIDE.md** - 7 simple steps to new project
+- **MOBILE_APP_GUIDE.md** - Complete guide for mobile development
 - **cheatsheets/** - Quick references for all tools
 
 ## 🤝 Contribute
