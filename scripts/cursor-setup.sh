@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # 🎯 CURSOR SETUP SCRIPT
-# Setter opp et nytt prosjekt med Cursor-optimalisert konfigurasjon
+# Sets up a new project with Cursor-optimized configuration
 
-echo "🚀 Setter opp prosjekt for Cursor..."
+echo "🚀 Setting up project for Cursor..."
 
-# Lag mappestruktur
+# Create folder structure
 mkdir -p src/{components/{ui,common},pages,hooks,contexts,services,utils,types,locales,assets}
 
-# Kopier .cursorrules til prosjektroten
+# Copy .cursorrules to project root
 cp ../.cursorrules ./
 
-# Opprett essensielle filer
+# Create essential files
 cat > package.json << 'EOF'
 {
   "name": "my-project",
@@ -109,11 +109,11 @@ EOF
 
 cat > .env.example << 'EOF'
 # Supabase
-VITE_SUPABASE_URL=din_supabase_url
-VITE_SUPABASE_ANON_KEY=din_supabase_anon_key
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-# Andre miljøvariabler
-VITE_APP_NAME=Mitt Prosjekt
+# Other environment variables
+VITE_APP_NAME=My Project
 EOF
 
 mkdir -p src/locales
@@ -140,9 +140,9 @@ cat > src/locales/nb.json << 'EOF'
 EOF
 
 cat > Changelog.txt << 'EOF'
-# Prosjektendringer
+# Project Changelog
 
-Format: [YYYY-MM-DD] - <beskrivelse> (commit: <hash>)
+Format: [YYYY-MM-DD] - <description> (commit: <hash>)
 
 EOF
 
@@ -189,7 +189,7 @@ cat > index.html << 'EOF'
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitt Prosjekt</title>
+    <title>My Project</title>
   </head>
   <body>
     <div id="root"></div>
@@ -220,10 +220,10 @@ function App() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">
-          Velkommen til ditt prosjekt
+          Welcome to your project
         </h1>
         <p className="text-gray-600">
-          Prosjektet er satt opp og klart til bruk!
+          The project is set up and ready to use!
         </p>
       </div>
     </div>
@@ -254,14 +254,14 @@ cat > src/App.css << 'EOF'
 }
 EOF
 
-echo "✅ Prosjektstruktur opprettet!"
-echo "📋 Neste steg:"
-echo "1. Kjør: npm install"
-echo "2. Kopier .env.example til .env og konfigurer"
-echo "3. Kjør: npm run dev"
-echo "4. Åpne i Cursor og start utviklingen!"
+echo "✅ Project structure created!"
+echo "📋 Next steps:"
+echo "1. Run: npm install"
+echo "2. Copy .env.example to .env and configure"
+echo "3. Run: npm run dev"
+echo "4. Open in Cursor and start developing!"
 echo ""
-echo "📚 Tilgjengelige guider:"
-echo "- USER_GUIDE.md - Komplett arbeidsflyt"
-echo "- cheatsheets/ - Hurtigreferanser"
-echo "- .cursorrules - AI-assistent konfigurasjon" 
+echo "📚 Available guides:"
+echo "- USER_GUIDE.md - Complete workflow"
+echo "- cheatsheets/ - Quick references"
+echo "- .cursorrules - AI assistant configuration" 

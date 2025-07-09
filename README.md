@@ -1,49 +1,49 @@
 # 🚀 CLAUDE CODE STARTER
 
-En komplett startpakke for effektiv utvikling med både Claude Code CLI og Cursor IDE.
+A complete starter kit for efficient development with both Claude Code CLI and Cursor IDE.
 
-## ✨ Hva er dette?
+## ✨ What is this?
 
-CLAUDE CODE STARTER gir deg:
-- ✅ Ferdigkonfigurerte standarder for moderne web- og mobilutvikling
-- ✅ Automatisk prosjektoppsett med ett script
-- ✅ **Dobbel støtte**: Claude Code CLI + Cursor IDE
-- ✅ Context7-integrasjon for oppdatert dokumentasjon
-- ✅ Omfattende cheat sheets og guider
-- ✅ Beste praksis for profesjonelle utviklere
+CLAUDE CODE STARTER provides:
+- ✅ Pre-configured standards for modern web and mobile development
+- ✅ Automatic project setup with one script
+- ✅ **Dual support**: Claude Code CLI + Cursor IDE
+- ✅ Context7 integration for up-to-date documentation
+- ✅ Comprehensive cheat sheets and guides
+- ✅ Best practices for professional developers
 
-## 🎯 Velg ditt verktøy
+## 🎯 Choose your tool
 
-### 🖥️ Claude Code CLI (Opprinnelig)
-Perfekt for deg som liker kommandolinje:
+### 🖥️ Claude Code CLI (Original)
+Perfect for command-line lovers:
 ```bash
 npm install -g @anthropic-ai/claude-code
 ./install.sh
 claude-setup
 ```
 
-### 🎯 Cursor IDE (Ny!)
-Perfekt for deg som vil ha AI direkte i IDE:
+### 🎯 Cursor IDE (New!)
+Perfect for those who want AI directly in the IDE:
 ```bash
-# Last ned Cursor fra https://cursor.sh/
+# Download Cursor from https://cursor.sh/
 ./scripts/cursor-setup.sh
 cursor .
 ```
 
-## 📦 Innhold
+## 📦 Contents
 
 ```
 CLAUDE CODE STARTER/
-├── CLAUDE.md                    # Claude Code-standarder
-├── .cursorrules                 # Cursor AI-konfigurasjon
-├── CURSOR_README.md             # Cursor-spesifikk guide
-├── USER_GUIDE.md                # Komplett brukerguide
-├── NEW_PROJECT_GUIDE.md         # Steg-for-steg oppstart
-├── MOBILE_APP_GUIDE.md          # Mobilutviklingsguide
-├── INSTALLATION.md              # Installasjonsguide
+├── CLAUDE.md                    # Claude Code standards
+├── .cursorrules                 # Cursor AI configuration
+├── CURSOR_README.md             # Cursor-specific guide
+├── USER_GUIDE.md                # Complete user guide
+├── NEW_PROJECT_GUIDE.md         # Step-by-step startup
+├── MOBILE_APP_GUIDE.md          # Mobile development guide
+├── INSTALLATION.md              # Installation guide
 ├── scripts/
-│   ├── setup-project.sh         # Claude Code-setup
-│   └── cursor-setup.sh          # Cursor-setup
+│   ├── setup-project.sh         # Claude Code setup
+│   └── cursor-setup.sh          # Cursor setup
 └── cheatsheets/
     ├── supabase-cli-cheatsheet.md
     ├── expo-eas-cheatsheet.md
@@ -54,49 +54,49 @@ CLAUDE CODE STARTER/
     └── context7-workflow.md
 ```
 
-## 🚀 Rask start
+## 🚀 Quick start
 
-### Alternativ 1: Claude Code CLI
+### Option 1: Claude Code CLI
 ```bash
-# Installer Claude Code
-yarn global add @anthropic-ai/claude-code # eller npm install -g
+# Install Claude Code
+yarn global add @anthropic-ai/claude-code # or npm install -g
 ./install.sh
 
-# Start nytt prosjekt
+# Start new project
 cd ~/Projects
-mkdir mitt-prosjekt && cd mitt-prosjekt
+mkdir my-project && cd my-project
 claude-setup
 claude
 ```
 
-### Alternativ 2: Cursor IDE
+### Option 2: Cursor IDE
 ```bash
-# Installer Cursor fra https://cursor.sh/
+# Install Cursor from https://cursor.sh/
 
-# Opprett nytt prosjekt
+# Create new project
 cd ~/Projects
-mkdir mitt-prosjekt && cd mitt-prosjekt
+mkdir my-project && cd my-project
 ../claude-code-starter/scripts/cursor-setup.sh
 
-# Åpne i Cursor
+# Open in Cursor
 cursor .
 ```
 
-## 🔄 Sammenligning: Claude Code vs Cursor
+## 🔄 Comparison: Claude Code vs Cursor
 
-| Funksjon         | Claude Code CLI         | Cursor IDE           |
-|------------------|------------------------|----------------------|
-| Oppsett          | `claude-setup`         | `cursor-setup.sh`    |
-| Konfigurasjon    | `~/.claude/CLAUDE.md`  | `.cursorrules`       |
-| AI-integrasjon   | Kommandolinje          | Direkte i IDE        |
-| Kontekst         | Global                 | Prosjektspesifikk    |
-| Best for         | CLI-brukere            | IDE-brukere          |
+| Feature         | Claude Code CLI         | Cursor IDE           |
+|-----------------|------------------------|----------------------|
+| Setup           | `claude-setup`         | `cursor-setup.sh`    |
+| Configuration   | `~/.claude/CLAUDE.md`  | `.cursorrules`       |
+| AI integration  | Command-line           | Direct in IDE        |
+| Context         | Global                 | Project-specific     |
+| Best for        | CLI users              | IDE users            |
 
-Du kan bruke begge løsninger parallelt – samme standarder, samme dokumentasjon, og felles cheat sheets!
+You can use both solutions in parallel – same standards, same documentation, and shared cheat sheets!
 
-## 💡 Teknologistack
+## 💡 Technology stack
 
-Identisk for begge løsninger:
+Identical for both solutions:
 
 ### Web
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
@@ -104,46 +104,46 @@ Identisk for begge løsninger:
 - **Testing**: Jest, React Testing Library, Playwright
 - **Deploy**: Vercel, Firebase Hosting, AWS Amplify
 
-### Mobil
-- **React Native med Expo** (anbefalt)
-- **iOS Native**: Swift 6+ med SwiftUI
+### Mobile
+- **React Native with Expo** (recommended)
+- **iOS Native**: Swift 6+ with SwiftUI
 - **Android Native**: Kotlin
-- **Flutter**: Dart med Material Design
+- **Flutter**: Dart with Material Design
 - **Testing**: Detox, XCTest, Espresso
 
-## 📚 Dokumentasjon
+## 📚 Documentation
 
-Fungerer for begge løsninger:
-- **USER_GUIDE.md** – Alt du trenger å vite
-- **NEW_PROJECT_GUIDE.md** – 7 enkle steg til nytt prosjekt
-- **MOBILE_APP_GUIDE.md** – Komplett guide for mobilutvikling
-- **CURSOR_README.md** – Cursor-spesifikke instruksjoner
-- **cheatsheets/** – Hurtigreferanser for alle verktøy
+Works for both solutions:
+- **USER_GUIDE.md** – Everything you need to know
+- **NEW_PROJECT_GUIDE.md** – 7 simple steps to a new project
+- **MOBILE_APP_GUIDE.md** – Complete guide for mobile development
+- **CURSOR_README.md** – Cursor-specific instructions
+- **cheatsheets/** – Quick references for all tools
 
-## 🌍 Internasjonale funksjoner
+## 🌍 International features
 
-- Flerspråklig støtte (engelsk + norsk)
-- Lokaliserte datoformater
-- Innebygd GDPR-støtte
-- Omfattende dokumentasjon
+- Multi-language support (English + Norwegian included)
+- Localized date formats
+- Built-in GDPR support
+- Comprehensive documentation
 
-## 🤝 Bidra
+## 🤝 Contribute
 
-Vil du forbedre CLAUDE CODE STARTER?
+Want to improve CLAUDE CODE STARTER?
 
-1. Fork repoet
-2. Gjør endringer
-3. Send pull request
+1. Fork the repo
+2. Make changes
+3. Send a pull request
 
-## 📄 Lisens
+## 📄 License
 
-MIT License – Fritt å bruke i egne prosjekter!
+MIT License – Free to use in your own projects!
 
 ## 🙏 Credits
 
-Laget av Studio X for det globale utviklermiljøet.
+Created by Studio X for the global developer community.
 
 ---
 
-**Start ditt neste prosjekt på minutter, ikke timer!** 🚀
-**Nå med dobbel støtte for Claude Code CLI og Cursor IDE!** 🎯
+**Start your next project in minutes, not hours!** 🚀
+**Now with dual support for Claude Code CLI and Cursor IDE!** 🎯

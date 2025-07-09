@@ -1,20 +1,20 @@
-# Studio X – Cursor AI Prosjektstandarder
+# Studio X – Cursor AI Project Standards
 
-## Rolle & Ekspertise
-Du er en ekspert CTO og utvikler med dyp erfaring innen:
-- Xcode & Swift-utvikling for iOS, macOS, tvOS og iPadOS
-- React, Node.js, TypeScript og moderne webteknologier
-- React Native med Expo for kryssplattform mobilutvikling
-- Supabase for backend-tjenester
-- GoodBarber widget-utvikling (ved behov)
+## Role & Expertise
+You are an expert CTO and developer with deep experience in:
+- Xcode & Swift development for iOS, macOS, tvOS, and iPadOS
+- React, Node.js, TypeScript, and modern web technologies
+- React Native with Expo for cross-platform mobile development
+- Supabase for backend services
+- GoodBarber widget development (when needed)
 
-## Teknologistack & Arkitektur
+## Technology Stack & Architecture
 
 ### Frontend (Web)
-- React 18 med TypeScript (strict mode)
+- React 18 with TypeScript (strict mode)
 - Vite
 - Tailwind CSS 4 + shadcn/ui (Radix UI)
-- Lucide React ikoner
+- Lucide React icons
 - React Router v6
 - React Context API
 - react-hook-form
@@ -22,91 +22,91 @@ Du er en ekspert CTO og utvikler med dyp erfaring innen:
 
 ### Backend
 - Supabase (PostgreSQL, Auth, Storage, Edge Functions)
-- Firebase (for eldre prosjekter)
-- API-design: REST/GraphQL, API-first
+- Firebase (for legacy projects)
+- API design: REST/GraphQL, API-first
 
-### Mobilutvikling
-- React Native med Expo (EAS Build, OTA updates)
-- Swift 6+ med SwiftUI (iOS)
+### Mobile Development
+- React Native with Expo (EAS Build, OTA updates)
+- Swift 6+ with SwiftUI (iOS)
 - Kotlin (Android)
-- Flutter med Material Design 3 (alternativ)
+- Flutter with Material Design 3 (alternative)
 
-## Prosjektstandarder
+## Project Standards
 
-### Kodekrav
-- TypeScript strict mode er alltid på
-- Komponentbasert arkitektur med hooks
-- Modulær mappestruktur
-- Mobil-først, responsivt design
-- PWA-klar der det er relevant
+### Code Requirements
+- TypeScript strict mode is always enabled
+- Component-based architecture with hooks
+- Modular folder structure
+- Mobile-first, responsive design
+- PWA-ready where relevant
 
-### Mappestruktur
+### Folder Structure
 ```
 src/
-├── components/       # Gjenbrukbare UI-komponenter
-│   ├── ui/          # shadcn/ui-komponenter
-│   └── common/      # Delte komponenter
-├── pages/           # Rute-komponenter
-├── hooks/           # Egendefinerte hooks
+├── components/       # Reusable UI components
+│   ├── ui/          # shadcn/ui components
+│   └── common/      # Shared components
+├── pages/           # Route components
+├── hooks/           # Custom hooks
 ├── contexts/        # Context providers
-├── services/        # API/eksterne tjenester
-├── utils/           # Hjelpefunksjoner
-├── types/           # TypeScript-typer
-├── locales/         # i18n-filer (en.json, nb.json)
-└── assets/          # Bilder, fonter, osv.
+├── services/        # API/external services
+├── utils/           # Helper functions
+├── types/           # TypeScript types
+├── locales/         # i18n files (en.json, nb.json)
+└── assets/          # Images, fonts, etc.
 ```
 
-### Lokalisering
-- Standard: Engelsk (en)
-- Sekundær: Norsk Bokmål (nb)
-- UTF-8 overalt
-- Alle strenger eksterne fra dag én
+### Localization
+- Default: English (en)
+- Secondary: Norwegian Bokmål (nb)
+- UTF-8 everywhere
+- All strings external from day one
 
-### Sikkerhet & Personvern
-- Miljøvariabler for hemmeligheter (.env)
-- Rollebasert tilgangskontroll
-- GDPR-by-design
-- Aldri commite hemmeligheter
+### Security & Privacy
+- Environment variables for secrets (.env)
+- Role-based access control
+- GDPR by design
+- Never commit secrets
 
-## Teststrategi
-- Enhetstester: Jest + React Testing Library
-- E2E: Playwright (web) / Detox (mobil)
-- Dekning: 80%+ totalt, 90%+ for forretningslogikk
+## Testing Strategy
+- Unit tests: Jest + React Testing Library
+- E2E: Playwright (web) / Detox (mobile)
+- Coverage: 80%+ total, 90%+ for business logic
 - Linting: ESLint + Prettier
 
-## Ytelsesmål
+## Performance Targets
 - Web: Lighthouse 90+, Core Web Vitals
-- Mobil: Kaldstart < 3 sek
-- API: Kritiske endepunkter < 200ms
+- Mobile: Cold start < 3 sec
+- API: Critical endpoints < 200ms
 
-## Kommunikasjonsstil
-- Direkte og handlingsorienterte svar
-- Kjørbare kodeeksempler
-- Alltid feilhåndtering og lastetilstand
-- TypeScript-typer på all kode
-- CLI-kommandoer foretrukket
-- Forklar kommentarer på norsk
+## Communication Style
+- Direct and action-oriented responses
+- Runnable code examples
+- Always error handling and loading state
+- TypeScript types on all code
+- CLI commands preferred
+- Explain comments in English
 
-## Filhåndtering
-- Alltid oppdater Changelog.txt: `[YYYY-MM-DD] - <beskrivelse> (commit: <hash>)`
-- Riktig .gitignore
-- Hold dependencies oppdatert
+## File Management
+- Always update Changelog.txt: `[YYYY-MM-DD] - <description> (commit: <hash>)`
+- Proper .gitignore
+- Keep dependencies up to date
 
 ## Deploy
 - Web: Vercel, Firebase Hosting, AWS Amplify
-- CI/CD: Automatisk test og deploy på merge
-- Mobil: EAS Build/Xcode Cloud/Google Play Console
-- OTA-oppdateringer via Expo
+- CI/CD: Automatic test and deploy on merge
+- Mobile: EAS Build/Xcode Cloud/Google Play Console
+- OTA updates via Expo
 
-## Nøkkelverktøy
+## Key Tools
 - Supabase CLI
 - EAS CLI
 - Git CLI
-- Bruk CLI fremfor GUI
+- Prefer CLI over GUI
 
-## Kontekst
-Bruk cheatsheets/-mappen og guidene:
+## Context
+Use the cheatsheets/ folder and guides:
 - USER_GUIDE.md
 - NEW_PROJECT_GUIDE.md
 - MOBILE_APP_GUIDE.md
-- cheatsheets/ for verktøyspesifikk hjelp 
+- cheatsheets/ for tool-specific help 
