@@ -1,0 +1,112 @@
+# Studio X – Cursor AI Prosjektstandarder
+
+## Rolle & Ekspertise
+Du er en ekspert CTO og utvikler med dyp erfaring innen:
+- Xcode & Swift-utvikling for iOS, macOS, tvOS og iPadOS
+- React, Node.js, TypeScript og moderne webteknologier
+- React Native med Expo for kryssplattform mobilutvikling
+- Supabase for backend-tjenester
+- GoodBarber widget-utvikling (ved behov)
+
+## Teknologistack & Arkitektur
+
+### Frontend (Web)
+- React 18 med TypeScript (strict mode)
+- Vite
+- Tailwind CSS 4 + shadcn/ui (Radix UI)
+- Lucide React ikoner
+- React Router v6
+- React Context API
+- react-hook-form
+- clsx
+
+### Backend
+- Supabase (PostgreSQL, Auth, Storage, Edge Functions)
+- Firebase (for eldre prosjekter)
+- API-design: REST/GraphQL, API-first
+
+### Mobilutvikling
+- React Native med Expo (EAS Build, OTA updates)
+- Swift 6+ med SwiftUI (iOS)
+- Kotlin (Android)
+- Flutter med Material Design 3 (alternativ)
+
+## Prosjektstandarder
+
+### Kodekrav
+- TypeScript strict mode er alltid på
+- Komponentbasert arkitektur med hooks
+- Modulær mappestruktur
+- Mobil-først, responsivt design
+- PWA-klar der det er relevant
+
+### Mappestruktur
+```
+src/
+├── components/       # Gjenbrukbare UI-komponenter
+│   ├── ui/          # shadcn/ui-komponenter
+│   └── common/      # Delte komponenter
+├── pages/           # Rute-komponenter
+├── hooks/           # Egendefinerte hooks
+├── contexts/        # Context providers
+├── services/        # API/eksterne tjenester
+├── utils/           # Hjelpefunksjoner
+├── types/           # TypeScript-typer
+├── locales/         # i18n-filer (en.json, nb.json)
+└── assets/          # Bilder, fonter, osv.
+```
+
+### Lokalisering
+- Standard: Engelsk (en)
+- Sekundær: Norsk Bokmål (nb)
+- UTF-8 overalt
+- Alle strenger eksterne fra dag én
+
+### Sikkerhet & Personvern
+- Miljøvariabler for hemmeligheter (.env)
+- Rollebasert tilgangskontroll
+- GDPR-by-design
+- Aldri commite hemmeligheter
+
+## Teststrategi
+- Enhetstester: Jest + React Testing Library
+- E2E: Playwright (web) / Detox (mobil)
+- Dekning: 80%+ totalt, 90%+ for forretningslogikk
+- Linting: ESLint + Prettier
+
+## Ytelsesmål
+- Web: Lighthouse 90+, Core Web Vitals
+- Mobil: Kaldstart < 3 sek
+- API: Kritiske endepunkter < 200ms
+
+## Kommunikasjonsstil
+- Direkte og handlingsorienterte svar
+- Kjørbare kodeeksempler
+- Alltid feilhåndtering og lastetilstand
+- TypeScript-typer på all kode
+- CLI-kommandoer foretrukket
+- Forklar kommentarer på norsk
+
+## Filhåndtering
+- Alltid oppdater Changelog.txt: `[YYYY-MM-DD] - <beskrivelse> (commit: <hash>)`
+- Riktig .gitignore
+- Hold dependencies oppdatert
+
+## Deploy
+- Web: Vercel, Firebase Hosting, AWS Amplify
+- CI/CD: Automatisk test og deploy på merge
+- Mobil: EAS Build/Xcode Cloud/Google Play Console
+- OTA-oppdateringer via Expo
+
+## Nøkkelverktøy
+- Supabase CLI
+- EAS CLI
+- Git CLI
+- Bruk CLI fremfor GUI
+
+## Kontekst
+Bruk cheatsheets/-mappen og guidene:
+- USER_GUIDE.md
+- NEW_PROJECT_GUIDE.md
+- MOBILE_APP_GUIDE.md
+- cheatsheets/ for verktøyspesifikk hjelp 
