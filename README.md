@@ -1,10 +1,10 @@
-# 🚀 CLAUDE CODE STARTER
+# 🚀 VIBECODE STARTER
 
 A complete starter kit for efficient development with both Claude Code CLI and Cursor IDE.
 
 ## ✨ What is this?
 
-CLAUDE CODE STARTER provides:
+VIBECODE STARTER provides:
 - ✅ Pre-configured standards for modern web and mobile development
 - ✅ Automatic project setup with one script
 - ✅ **Dual support**: Claude Code CLI + Cursor IDE
@@ -33,8 +33,8 @@ cursor .
 ## 📦 Contents
 
 ```
-CLAUDE CODE STARTER/
-├── CLAUDE.md                    # Claude Code standards
+VIBECODE STARTER/
+├── VIBECODE.md                  # Claude Code standards (rename file if needed)
 ├── .cursorrules                 # Cursor AI configuration
 ├── CURSOR_README.md             # Cursor-specific guide
 ├── USER_GUIDE.md                # Complete user guide
@@ -76,7 +76,7 @@ claude
 # Create new project
 cd ~/Projects
 mkdir my-project && cd my-project
-../claude-code-starter/scripts/cursor-setup.sh
+../vibecode-starter/scripts/cursor-setup.sh
 
 # Open in Cursor
 cursor .
@@ -129,7 +129,7 @@ Works for both solutions:
 
 ## 🤝 Contribute
 
-Want to improve CLAUDE CODE STARTER?
+Want to improve VIBECODE STARTER?
 
 1. Fork the repo
 2. Make changes

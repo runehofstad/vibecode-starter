@@ -1,4 +1,4 @@
-# Studio X - Claude Code Project Standards
+# Studio X – Vibecode Starter Project Standards
 
 ## Stack & Architecture
 

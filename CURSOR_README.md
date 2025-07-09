@@ -1,6 +1,6 @@
-# 🎯 CURSOR VERSION – CLAUDE CODE STARTER
+# 🎯 CURSOR VERSION – VIBECODE STARTER
 
-This is the Cursor-adapted version of CLAUDE CODE STARTER. You get the same standards and best practices, but optimized for Cursor IDE.
+This is the Cursor-adapted version of VIBECODE STARTER. You get the same standards and best practices, but optimized for Cursor IDE.
 
 ## 🚀 Quick start with Cursor
 
@@ -13,8 +13,8 @@ brew install --cask cursor
 
 ### 2. Clone this project
 ```bash
-git clone https://github.com/runehofstad/Claude_code_starter.git
-cd Claude_code_starter
+git clone https://github.com/runehofstad/vibecode-starter.git
+cd vibecode-starter
 ```
 
 ### 3. Create a new project
@@ -24,7 +24,7 @@ cd ~/Projects
 mkdir my-project && cd my-project
 
 # Run Cursor setup
-../Claude_code_starter/scripts/cursor-setup.sh
+../vibecode-starter/scripts/cursor-setup.sh
 
 # Install dependencies
 npm install
