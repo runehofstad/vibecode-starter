@@ -2,36 +2,22 @@
 
 This is the Cursor-adapted version of VIBECODE STARTER. You get the same standards and best practices, but optimized for Cursor IDE.
 
-## 🚀 Quick start with Cursor
+## 🚀 Quick start with Cursor (Template Method)
 
-### 1. Install Cursor
-```bash
-# Download from https://cursor.sh/
-# Or via Homebrew (macOS)
-brew install --cask cursor
-```
+1. **Click "Use this template"** on GitHub ([repo link](https://github.com/runehofstad/vibecode-starter)).
+2. Create your new repository (choose name and visibility).
+3. Clone your new repository to your local machine:
+   ```sh
+   git clone https://github.com/your-username/your-new-repo.git
+   cd your-new-repo
+   ```
+4. Install dependencies and start coding!
+   ```sh
+   npm install
+   npm run dev
+   ```
 
-### 2. Clone this project
-```bash
-git clone https://github.com/runehofstad/vibecode-starter.git
-cd vibecode-starter
-```
-
-### 3. Create a new project
-```bash
-# Go to your desired folder
-cd ~/Projects
-mkdir my-project && cd my-project
-
-# Run Cursor setup
-../vibecode-starter/scripts/cursor-setup.sh
-
-# Install dependencies
-npm install
-
-# Open in Cursor
-cursor .
-```
+All documentation is located in the `docs/` folder.
 
 ## 🎯 Cursor-specific features
 
@@ -42,37 +28,36 @@ cursor .
 
 ### Integrated cheat sheets
 Use `@` in Cursor to reference:
-- `@cheatsheets/supabase-cli-cheatsheet.md`
-- `@cheatsheets/react-native-cheatsheet.md`
-- `@cheatsheets/expo-eas-cheatsheet.md`
-- `@USER_GUIDE.md`
+- `@docs/supabase-cli-cheatsheet.md`
+- `@docs/react-native-cheatsheet.md`
+- `@docs/expo-eas-cheatsheet.md`
+- `@docs/USER_GUIDE.md`
 
 ### Context files
 All markdown files work as context in Cursor:
-- `USER_GUIDE.md`
-- `NEW_PROJECT_GUIDE.md`
-- `MOBILE_APP_GUIDE.md`
+- `docs/USER_GUIDE.md`
+- `docs/NEW_PROJECT_GUIDE.md`
+- `docs/MOBILE_APP_GUIDE.md`
 
 ## 🔄 Differences from the Claude Code version
 
 | Feature      | Claude Code | Cursor |
 |--------------|-------------|--------|
 | Configuration| `~/.claude/CLAUDE.md` | `.cursorrules` |
-| Setup        | `claude-setup` | `cursor-setup.sh` |
+| Setup        | `claude-setup` | Template method |
 | AI integration| CLI-based    | IDE-integrated |
 | Context      | Global       | Project-specific |
 
 ## 📚 Same documentation
 
 All guides work:
-- **USER_GUIDE.md** – Complete workflow
-- **NEW_PROJECT_GUIDE.md** – 7 steps to a new project
-- **MOBILE_APP_GUIDE.md** – Mobile development
-- **cheatsheets/** – Quick references
+- `docs/USER_GUIDE.md` – Complete workflow
+- `docs/NEW_PROJECT_GUIDE.md` – 7 steps to a new project
+- `docs/MOBILE_APP_GUIDE.md` – Mobile development
+- `docs/` – All cheat sheets and standards
 
 ## 🛠️ Technology stack
 
-Identical to the Claude Code version:
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS
 - **Backend**: Supabase (PostgreSQL, Auth, Storage)
 - **Mobile**: React Native/Expo, Swift/SwiftUI
@@ -98,4 +83,8 @@ You can use both in parallel:
 - **Claude Code**: CLI-based
 - **Cursor**: IDE-based
 
-Same standards and best practices! 
+Same standards and best practices!
+
+---
+
+**Note:** This project no longer uses shell scripts for setup. All onboarding is handled via the GitHub template method and documentation in `docs/`. 
