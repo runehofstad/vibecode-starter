@@ -2,7 +2,7 @@
 
 ## Quick Start for Mobile Apps
 
-CLAUDE CODE STARTER fully supports mobile app development with React Native, iOS, Android, and Flutter.
+Vibecode Starter fully supports mobile app development with React Native, iOS (Swift), Android, and Flutter through specialized Sub-Agents.
 
 ## 🚀 Getting Started
 
@@ -153,7 +153,8 @@ claude
 
 ### iOS (Swift/SwiftUI)
 ```bash
-"Create an iOS app with SwiftUI for [app type]"
+# Use iOS/Swift Agent
+claude --agent docs/agents/ios-swift-agent.md "Create an iOS app with SwiftUI for [app type]"
 # Claude will set up Xcode project with best practices
 ```
 
@@ -165,8 +166,9 @@ claude
 
 ### Flutter
 ```bash
-"Create a Flutter app for [app type]"
-# Claude will set up Flutter project with Material Design
+# Use Flutter Agent
+claude --agent docs/agents/flutter-agent.md "Create a Flutter app for [app type]"
+# Sets up Flutter project with Material Design 3
 ```
 
 ## 🔧 Common Mobile Tasks
