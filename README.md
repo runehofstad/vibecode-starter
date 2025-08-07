@@ -85,7 +85,10 @@ All guides and cheat sheets are now in the `docs/` folder:
 ## 💡 Technology stack
 
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
-- **Backend**: Supabase (PostgreSQL, Auth, Storage, Edge Functions)
+- **Backend**: 
+  - **Supabase** (PostgreSQL, Auth, Storage, Edge Functions) - Default
+  - **Firebase** (Firestore, Cloud Functions, Auth) - Alternative
+  - Choose based on your needs: `docs/BACKEND_SELECTION_GUIDE.md`
 - **Testing**: Jest, React Testing Library, Playwright
 - **Deploy**: Vercel, Firebase Hosting, AWS Amplify
 - **Mobile**: React Native/Expo, Swift/SwiftUI, Kotlin, Flutter

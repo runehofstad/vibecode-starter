@@ -20,10 +20,13 @@ You are an expert CTO and developer with deep experience in:
 - react-hook-form
 - clsx
 
-### Backend
-- Supabase (PostgreSQL, Auth, Storage, Edge Functions)
-- Firebase (for legacy projects)
+### Backend (Choose based on project needs)
+- **Primary:** Supabase (PostgreSQL, Auth, Storage, Edge Functions)
+  - Best for: SQL needs, complex queries, open source
+- **Alternative:** Firebase (Firestore, Cloud Functions, Auth)
+  - Best for: NoSQL, real-time features, offline-first
 - API design: REST/GraphQL, API-first
+- See docs/BACKEND_SELECTION_GUIDE.md for choosing
 
 ### Mobile Development
 - React Native with Expo (EAS Build, OTA updates)

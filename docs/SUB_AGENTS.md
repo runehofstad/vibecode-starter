@@ -14,14 +14,27 @@ This document defines specialized Sub-Agents for common development tasks in Vib
 - Responsive design and accessibility
 - Performance optimization (Core Web Vitals)
 
-### 2. Backend Agent (`backend-agent.md`)
+### 2. Backend Agent (Choose One)
+
+#### 2a. Supabase Backend (`backend-agent.md`)
 **Specialization:** Supabase, PostgreSQL, APIs
 **Responsibilities:**
-- Database schema design and migrations
+- PostgreSQL schema design and migrations
 - Supabase Edge Functions development
-- Authentication and authorization
-- API endpoint creation (REST/GraphQL)
-- Real-time subscriptions setup
+- Row Level Security (RLS) policies
+- REST/GraphQL API endpoints
+- Real-time subscriptions with PostgreSQL
+
+#### 2b. Firebase Backend (`firebase-backend-agent.md`)
+**Specialization:** Firebase, Firestore, Cloud Functions
+**Responsibilities:**
+- Firestore NoSQL data modeling
+- Cloud Functions development
+- Security rules configuration
+- Real-time listeners and offline sync
+- Firebase service integrations
+
+**Selection Guide:** See `docs/BACKEND_SELECTION_GUIDE.md` for choosing between Supabase and Firebase
 
 ### 3. Mobile Agent (`mobile-agent.md`)
 **Specialization:** React Native, Expo, Swift/Kotlin
