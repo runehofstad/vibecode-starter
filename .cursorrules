@@ -110,13 +110,15 @@ src/
 ## Sub-Agents System
 This project supports specialized Sub-Agents for different development tasks:
 - Frontend Agent: React, TypeScript, UI/UX (docs/agents/frontend-agent.md)
-- Backend Agent: Supabase, PostgreSQL, APIs (docs/agents/backend-agent.md)
-- Mobile Agent: React Native, Expo, Native (docs/agents/mobile-agent.md)
+- Backend Agents: Supabase/Firebase/AWS (docs/agents/*-backend-agent.md)
+- Mobile Agents: React Native/iOS/Flutter (docs/agents/mobile-agent.md, ios-swift-agent.md, flutter-agent.md)
 - Testing Agent: Jest, Playwright, E2E (docs/agents/testing-agent.md)
 - Security Agent: Auth, GDPR, Audits (docs/agents/security-agent.md)
 - DevOps Agent: CI/CD, Deploy, Infra (docs/agents/devops-agent.md)
 - Design Agent: UI/UX, Figma, A11y (docs/agents/design-agent.md)
 - Data Agent: Database, Analytics (docs/agents/data-agent.md)
+- CLI Agent: Terminal, Automation (docs/agents/cli-agent.md)
+- Git/GitHub Agent: Version Control, CI/CD (docs/agents/git-github-agent.md)
 
 For complex tasks, use agent orchestration:
 - See docs/SUB_AGENTS.md for agent specifications

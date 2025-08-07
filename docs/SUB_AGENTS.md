@@ -128,6 +128,15 @@ This document defines specialized Sub-Agents for common development tasks in Vib
 - System administration
 - Terminal-based workflows
 
+### 10. Git/GitHub Agent (`git-github-agent.md`)
+**Specialization:** Version Control, GitHub Workflows, CI/CD
+**Responsibilities:**
+- Git operations and workflows
+- GitHub Actions automation
+- Pull request and issue management
+- Branch protection and security
+- Release automation and versioning
+
 ## Sub-Agent Orchestration
 
 ### Parallel Task Examples
