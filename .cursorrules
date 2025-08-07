@@ -104,9 +104,27 @@ src/
 - Git CLI
 - Prefer CLI over GUI
 
-## Context
-Use the cheatsheets/ folder and guides:
-- USER_GUIDE.md
-- NEW_PROJECT_GUIDE.md
-- MOBILE_APP_GUIDE.md
-- cheatsheets/ for tool-specific help 
+## Sub-Agents System
+This project supports specialized Sub-Agents for different development tasks:
+- Frontend Agent: React, TypeScript, UI/UX (docs/agents/frontend-agent.md)
+- Backend Agent: Supabase, PostgreSQL, APIs (docs/agents/backend-agent.md)
+- Mobile Agent: React Native, Expo, Native (docs/agents/mobile-agent.md)
+- Testing Agent: Jest, Playwright, E2E (docs/agents/testing-agent.md)
+- Security Agent: Auth, GDPR, Audits (docs/agents/security-agent.md)
+- DevOps Agent: CI/CD, Deploy, Infra (docs/agents/devops-agent.md)
+- Design Agent: UI/UX, Figma, A11y (docs/agents/design-agent.md)
+- Data Agent: Database, Analytics (docs/agents/data-agent.md)
+
+For complex tasks, use agent orchestration:
+- See docs/SUB_AGENTS.md for agent specifications
+- See docs/SUB_AGENT_WORKFLOW.md for workflow patterns
+
+## Context & Documentation
+All documentation is in the docs/ folder:
+- docs/USER_GUIDE.md - Complete user guide
+- docs/NEW_PROJECT_GUIDE.md - Starting new projects
+- docs/MOBILE_APP_GUIDE.md - Mobile development
+- docs/SUB_AGENTS.md - Sub-Agent system overview
+- docs/SUB_AGENT_WORKFLOW.md - Agent workflow patterns
+- docs/agents/ - Individual agent specifications
+- Tool-specific cheatsheets in docs/ 

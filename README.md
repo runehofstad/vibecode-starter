@@ -7,6 +7,7 @@ A complete starter kit for efficient development with both Claude Code CLI and C
 VIBECODE STARTER provides:
 - ✅ Pre-configured standards for modern web and mobile development
 - ✅ **GitHub template** for instant project setup
+- ✅ **Sub-Agents system** for specialized development tasks (NEW!)
 - ✅ Context7 integration for up-to-date documentation
 - ✅ Comprehensive cheat sheets and guides
 - ✅ Best practices for professional developers
@@ -44,12 +45,40 @@ vibecode-starter/
 └── ...
 ```
 
+## 🤖 NEW: Sub-Agents System
+
+Leverage specialized AI agents for different development tasks:
+
+### Available Sub-Agents
+- **Frontend Agent** – React, TypeScript, UI/UX development
+- **Backend Agent** – Supabase, PostgreSQL, API development
+- **Mobile Agent** – React Native, Expo, native development
+- **Testing Agent** – Jest, Playwright, comprehensive testing
+- **Security Agent** – Authentication, GDPR, security audits
+- **DevOps Agent** – CI/CD, deployment, infrastructure
+- **Design Agent** – UI/UX, Figma integration, accessibility
+- **Data Agent** – Database optimization, analytics
+
+### Quick Example
+```bash
+# Use specific agent for specialized task
+claude --agent docs/agents/frontend-agent.md "Create responsive dashboard"
+
+# Orchestrate multiple agents for complex features
+claude --orchestrate "Build complete authentication system"
+```
+
+See `docs/SUB_AGENTS.md` and `docs/SUB_AGENT_WORKFLOW.md` for complete documentation.
+
 ## 📚 Documentation
 
 All guides and cheat sheets are now in the `docs/` folder:
 - `docs/USER_GUIDE.md` – Everything you need to know
 - `docs/NEW_PROJECT_GUIDE.md` – 7 simple steps to a new project
 - `docs/MOBILE_APP_GUIDE.md` – Complete guide for mobile development
+- `docs/SUB_AGENTS.md` – Sub-Agents system overview
+- `docs/SUB_AGENT_WORKFLOW.md` – Agent workflow patterns
+- `docs/agents/` – Individual agent specifications
 - `docs/CURSOR_README.md` – Cursor-specific instructions
 - `docs/` – All cheat sheets and standards
 
