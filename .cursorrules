@@ -108,17 +108,40 @@ src/
 - Prefer CLI over GUI
 
 ## Sub-Agents System
-This project supports specialized Sub-Agents for different development tasks:
+This project supports 29 specialized Sub-Agents for different development tasks:
+
+### Core Development
 - Frontend Agent: React, TypeScript, UI/UX (docs/agents/frontend-agent.md)
 - Backend Agents: Supabase/Firebase/AWS (docs/agents/*-backend-agent.md)
 - Mobile Agents: React Native/iOS/Flutter (docs/agents/mobile-agent.md, ios-swift-agent.md, flutter-agent.md)
-- Testing Agent: Jest, Playwright, E2E (docs/agents/testing-agent.md)
-- Security Agent: Auth, GDPR, Audits (docs/agents/security-agent.md)
+
+### Operations & Infrastructure
 - DevOps Agent: CI/CD, Deploy, Infra (docs/agents/devops-agent.md)
+- Docker Agent: Containers, Orchestration (docs/agents/docker-container-agent.md)
+- Monitoring Agent: Observability, Metrics (docs/agents/monitoring-observability-agent.md)
+- Security Agent: Auth, GDPR, Audits (docs/agents/security-agent.md)
+
+### Specialized Features
+- Payment Agent: Stripe, Vipps, E-commerce (docs/agents/payment-agent.md)
+- WebSocket Agent: Realtime, Live Updates (docs/agents/websocket-realtime-agent.md)
+- Email Agent: Transactional, SMS, Push (docs/agents/email-communication-agent.md)
+- API/GraphQL Agent: REST, GraphQL Design (docs/agents/api-graphql-agent.md)
+- Database Migration Agent: Schema, Data Sync (docs/agents/database-migration-agent.md)
+
+### Quality & Documentation
+- Testing Agent: Jest, Playwright, E2E (docs/agents/testing-agent.md)
+- Documentation Agent: Docs, API Specs (docs/agents/documentation-agent.md)
+- Accessibility Agent: WCAG, A11y (docs/agents/accessibility-agent.md)
+- SEO/Marketing Agent: SEO, Analytics (docs/agents/seo-marketing-agent.md)
+
+### Additional Agents
 - Design Agent: UI/UX, Figma, A11y (docs/agents/design-agent.md)
 - Data Agent: Database, Analytics (docs/agents/data-agent.md)
 - CLI Agent: Terminal, Automation (docs/agents/cli-agent.md)
 - Git/GitHub Agent: Version Control, CI/CD (docs/agents/git-github-agent.md)
+- AI/ML Agent: Integration, Models (docs/agents/ai-ml-integration-agent.md)
+- Localization Agent: i18n, l10n (docs/agents/localization-agent.md)
+- PWA/Offline Agent: Service Workers (docs/agents/pwa-offline-agent.md)
 
 For complex tasks, use agent orchestration:
 - See docs/SUB_AGENTS.md for agent specifications

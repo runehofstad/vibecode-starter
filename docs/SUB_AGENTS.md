@@ -1,7 +1,7 @@
 # Vibecode Sub-Agents Configuration
 
 ## Overview
-This document defines **26 specialized Sub-Agents** for comprehensive development coverage in Vibecode projects. Each Sub-Agent is an expert in its domain, enabling efficient parallel work and deep specialized expertise across all aspects of modern application development.
+This document defines **29 specialized Sub-Agents** for comprehensive development coverage in Vibecode projects. Each Sub-Agent is an expert in its domain, enabling efficient parallel work and deep specialized expertise across all aspects of modern application development.
 
 ## Available Sub-Agents
 
@@ -226,6 +226,33 @@ This document defines **26 specialized Sub-Agents** for comprehensive developmen
 - Web app manifest configuration
 - Push notifications
 - Background sync
+
+### 21. Payment/E-commerce Agent (`payment-agent.md`)
+**Specialization:** Payment Processing, Subscriptions, E-commerce
+**Responsibilities:**
+- Stripe, Vipps, Klarna integration
+- Subscription management
+- Payment processing and refunds
+- PCI compliance
+- Multi-currency support
+
+### 22. WebSocket/Realtime Agent (`websocket-realtime-agent.md`)
+**Specialization:** WebSocket, Real-time Communication, Live Updates
+**Responsibilities:**
+- Socket.io implementation
+- Real-time chat systems
+- Live notifications
+- Collaborative features
+- WebRTC integration
+
+### 23. Email/Communication Agent (`email-communication-agent.md`)
+**Specialization:** Email, SMS, Push Notifications
+**Responsibilities:**
+- Transactional email sending
+- SMS delivery with Twilio
+- Push notifications (FCM, OneSignal)
+- Email templates and campaigns
+- Bounce and unsubscribe handling
 
 ## Sub-Agent Orchestration
 

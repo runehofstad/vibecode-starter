@@ -47,17 +47,27 @@ vibecode-starter/
 
 ## 🤖 NEW: Sub-Agents System
 
-Leverage specialized AI agents for different development tasks:
+Leverage **29 specialized AI agents** for different development tasks:
 
-### Available Sub-Agents
+### Core Development Agents
 - **Frontend Agent** – React, TypeScript, UI/UX development
-- **Backend Agent** – Supabase, PostgreSQL, API development
-- **Mobile Agent** – React Native, Expo, native development
+- **Backend Agents** – Supabase, Firebase, AWS backends
+- **Mobile Agents** – React Native, iOS/Swift, Flutter
 - **Testing Agent** – Jest, Playwright, comprehensive testing
-- **Security Agent** – Authentication, GDPR, security audits
+
+### Infrastructure & Operations
 - **DevOps Agent** – CI/CD, deployment, infrastructure
-- **Design Agent** – UI/UX, Figma integration, accessibility
-- **Data Agent** – Database optimization, analytics
+- **Docker/Container Agent** – Containerization, orchestration
+- **Monitoring Agent** – Observability, logging, metrics
+- **Security Agent** – Authentication, GDPR, security audits
+
+### Specialized Agents
+- **API/GraphQL Agent** – REST, GraphQL, API design
+- **Database Migration Agent** – Schema migrations, data sync
+- **Payment Agent** – Stripe, Vipps, e-commerce
+- **WebSocket Agent** – Real-time features, live updates
+- **Email/Communication Agent** – Transactional email, SMS, push
+- **And 14 more specialized agents...**
 
 ### Quick Example
 ```bash
