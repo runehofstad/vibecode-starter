@@ -36,14 +36,43 @@ This document defines specialized Sub-Agents for common development tasks in Vib
 
 **Selection Guide:** See `docs/BACKEND_SELECTION_GUIDE.md` for choosing between Supabase and Firebase
 
-### 3. Mobile Agent (`mobile-agent.md`)
-**Specialization:** React Native, Expo, Swift/Kotlin
+### 2c. AWS Backend (`aws-backend-agent.md`)
+**Specialization:** AWS Services, Lambda, DynamoDB
+**Responsibilities:**
+- Serverless architecture with Lambda
+- DynamoDB NoSQL and RDS SQL databases
+- API Gateway and AppSync GraphQL
+- CloudFormation/CDK infrastructure
+- S3, CloudFront, and other AWS services
+
+### 3. Mobile Agents (Choose Based on Platform)
+
+#### 3a. React Native Agent (`mobile-agent.md`)
+**Specialization:** React Native, Expo, Cross-platform
 **Responsibilities:**
 - React Native component development
 - Expo SDK integration
 - Native module bridging
 - Platform-specific implementations
 - OTA update management
+
+#### 3b. iOS/Swift Agent (`ios-swift-agent.md`)
+**Specialization:** Native iOS, Swift, SwiftUI
+**Responsibilities:**
+- SwiftUI and UIKit development
+- Core Data and SwiftData
+- Apple ecosystem integration
+- App Store optimization
+- Human Interface Guidelines compliance
+
+#### 3c. Flutter Agent (`flutter-agent.md`)
+**Specialization:** Flutter, Dart, Cross-platform
+**Responsibilities:**
+- Flutter widget development
+- Material Design 3 and Cupertino
+- State management (Riverpod/Bloc)
+- Platform channel integration
+- Custom painters and animations
 
 ### 4. Testing Agent (`testing-agent.md`)
 **Specialization:** Jest, Playwright, Testing strategies
@@ -89,6 +118,15 @@ This document defines specialized Sub-Agents for common development tasks in Vib
 - Analytics implementation
 - Data migration scripts
 - Backup strategies
+
+### 9. CLI Agent (`cli-agent.md`)
+**Specialization:** Terminal Operations, Automation, DevOps
+**Responsibilities:**
+- CLI tool development
+- Shell scripting (Bash/Zsh)
+- Task automation with Make/npm scripts
+- System administration
+- Terminal-based workflows
 
 ## Sub-Agent Orchestration
 

@@ -1,22 +1,23 @@
-# Backend Selection Guide: Supabase vs Firebase
+# Backend Selection Guide: Supabase vs Firebase vs AWS
 
 ## Overview
-This guide helps you choose the right backend for your Vibecode project. Both Supabase and Firebase are excellent choices, but they excel in different scenarios.
+This guide helps you choose the right backend for your Vibecode project. Supabase, Firebase, and AWS each excel in different scenarios and offer unique advantages.
 
 ## Quick Decision Matrix
 
-| Feature | Supabase | Firebase | Winner |
-|---------|----------|----------|---------|
-| **Database Type** | PostgreSQL (SQL) | Firestore (NoSQL) | Depends on needs |
-| **Real-time** | ✅ Good | ✅ Excellent | Firebase |
-| **Open Source** | ✅ Yes | ❌ No | Supabase |
-| **Self-hosting** | ✅ Yes | ❌ No | Supabase |
-| **Offline Support** | ⚠️ Limited | ✅ Excellent | Firebase |
-| **Complex Queries** | ✅ Excellent | ⚠️ Limited | Supabase |
-| **Cost at Scale** | ✅ Predictable | ⚠️ Can escalate | Supabase |
-| **Learning Curve** | Medium | Low | Firebase |
-| **Vendor Lock-in** | Low | High | Supabase |
-| **Mobile SDKs** | ✅ Good | ✅ Excellent | Firebase |
+| Feature | Supabase | Firebase | AWS | Winner |
+|---------|----------|----------|-----|---------|
+| **Database Type** | PostgreSQL (SQL) | Firestore (NoSQL) | DynamoDB/RDS (Both) | AWS (flexibility) |
+| **Real-time** | ✅ Good | ✅ Excellent | ✅ Good (AppSync) | Firebase |
+| **Open Source** | ✅ Yes | ❌ No | ⚠️ Partial | Supabase |
+| **Self-hosting** | ✅ Yes | ❌ No | ✅ Yes | Tie |
+| **Offline Support** | ⚠️ Limited | ✅ Excellent | ✅ Good | Firebase |
+| **Complex Queries** | ✅ Excellent | ⚠️ Limited | ✅ Excellent (RDS) | Tie |
+| **Cost at Scale** | ✅ Predictable | ⚠️ Can escalate | ⚠️ Complex | Supabase |
+| **Learning Curve** | Medium | Low | High | Firebase |
+| **Vendor Lock-in** | Low | High | Medium | Supabase |
+| **Scalability** | ✅ Good | ✅ Good | ✅ Excellent | AWS |
+| **Enterprise Features** | ⚠️ Growing | ✅ Good | ✅ Excellent | AWS |
 
 ## When to Choose Supabase
 
@@ -114,10 +115,58 @@ project/
 claude --agent docs/agents/firebase-backend-agent.md "Setup Firebase backend with Firestore and real-time subscriptions"
 ```
 
+## When to Choose AWS
+
+### Perfect For:
+- **Enterprise Scale**: Large-scale applications with complex requirements
+- **Full Control**: Need fine-grained control over infrastructure
+- **Microservices**: Building distributed, service-oriented architectures
+- **Compliance**: Strict regulatory requirements (HIPAA, PCI-DSS)
+- **Global Distribution**: Multi-region deployment needs
+- **Custom Solutions**: Specific infrastructure requirements
+
+### Use Cases:
+```yaml
+aws_ideal_projects:
+  - Enterprise SaaS platforms
+  - Financial services applications
+  - Healthcare systems with HIPAA compliance
+  - High-traffic e-commerce platforms
+  - Video streaming services
+  - IoT data processing platforms
+  - Machine learning applications
+```
+
+### Example Project Structure:
+```typescript
+// AWS project structure
+project/
+├── infrastructure/        # CDK/CloudFormation
+│   ├── stacks/
+│   ├── constructs/
+│   └── config/
+├── lambdas/              # Lambda functions
+│   ├── api/
+│   ├── triggers/
+│   └── layers/
+├── src/
+│   ├── services/
+│   │   ├── dynamodb.ts
+│   │   ├── s3.ts
+│   │   └── cognito.ts
+│   └── utils/
+└── scripts/              # Deployment scripts
+```
+
+### AWS Agent Command:
+```bash
+claude --agent docs/agents/aws-backend-agent.md "Setup AWS serverless backend with DynamoDB and Lambda"
+```
+
 ## Hybrid Approach
 
-### When to Use Both
-Sometimes using both services makes sense:
+### When to Use Multiple Services
+Sometimes combining services makes sense:
 
 ```yaml
 hybrid_architecture:
