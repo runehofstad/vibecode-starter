@@ -1,7 +1,7 @@
 # Vibecode Sub-Agents Configuration
 
 ## Overview
-This document defines specialized Sub-Agents for common development tasks in Vibecode projects. Each Sub-Agent is optimized for specific responsibilities, enabling efficient parallel work and specialized expertise.
+This document defines **26 specialized Sub-Agents** for comprehensive development coverage in Vibecode projects. Each Sub-Agent is an expert in its domain, enabling efficient parallel work and deep specialized expertise across all aspects of modern application development.
 
 ## Available Sub-Agents
 
@@ -136,6 +136,96 @@ This document defines specialized Sub-Agents for common development tasks in Vib
 - Pull request and issue management
 - Branch protection and security
 - Release automation and versioning
+
+### 11. API/GraphQL Agent (`api-graphql-agent.md`)
+**Specialization:** REST APIs, GraphQL, OpenAPI
+**Responsibilities:**
+- RESTful API design and documentation
+- GraphQL schema design
+- API versioning and documentation
+- Rate limiting and caching
+- API gateway configuration
+
+### 12. Docker/Container Agent (`docker-container-agent.md`)
+**Specialization:** Docker, Kubernetes, Container Orchestration
+**Responsibilities:**
+- Dockerfile optimization
+- Docker Compose configurations
+- Kubernetes deployments
+- Container security
+- Image optimization
+
+### 13. Monitoring/Observability Agent (`monitoring-observability-agent.md`)
+**Specialization:** APM, Logging, Metrics, Tracing
+**Responsibilities:**
+- Application performance monitoring
+- Distributed tracing setup
+- Log aggregation and analysis
+- Metrics collection and dashboards
+- Alert configuration
+
+### 14. Documentation Agent (`documentation-agent.md`)
+**Specialization:** Technical Writing, API Docs, Diagrams
+**Responsibilities:**
+- README and documentation creation
+- API documentation generation
+- Architecture diagrams
+- User guides and tutorials
+- Code documentation
+
+### 15. AI/ML Integration Agent (`ai-ml-integration-agent.md`)
+**Specialization:** LLMs, Embeddings, ML Features
+**Responsibilities:**
+- LLM API integration
+- Vector database setup
+- Prompt engineering
+- ML model deployment
+- AI feature implementation
+
+### 16. Accessibility Agent (`accessibility-agent.md`)
+**Specialization:** WCAG, ARIA, Screen Readers
+**Responsibilities:**
+- WCAG compliance implementation
+- Screen reader optimization
+- Keyboard navigation
+- Color contrast validation
+- Accessibility testing
+
+### 17. SEO/Marketing Agent (`seo-marketing-agent.md`)
+**Specialization:** SEO, Analytics, Marketing Tech
+**Responsibilities:**
+- SEO optimization
+- Analytics implementation
+- A/B testing setup
+- Conversion tracking
+- Marketing integrations
+
+### 18. Database Migration Agent (`database-migration-agent.md`)
+**Specialization:** Schema Migrations, Data Transformations
+**Responsibilities:**
+- Database migration scripts
+- Schema version control
+- Data transformation pipelines
+- Zero-downtime migrations
+- Rollback strategies
+
+### 19. Localization Agent (`localization-agent.md`)
+**Specialization:** i18n, L10n, Translation Management
+**Responsibilities:**
+- Internationalization setup
+- Translation management
+- Locale-specific formatting
+- RTL support
+- Content localization
+
+### 20. PWA/Offline Agent (`pwa-offline-agent.md`)
+**Specialization:** Service Workers, PWA, Offline Support
+**Responsibilities:**
+- Service worker implementation
+- Offline functionality
+- Web app manifest configuration
+- Push notifications
+- Background sync
 
 ## Sub-Agent Orchestration
 
