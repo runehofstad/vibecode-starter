@@ -104,3 +104,7 @@ ui-debug.log
 # AWS
 .aws-sam/
 samconfig.toml
+
+# Claude Starter Kit (local helper files)
+claude-starter/
+.claude/

@@ -29,32 +29,42 @@ VIBECODE STARTER provides:
 
 All documentation is located in the `docs/` folder.
 
-## 📦 Contents
+## 📦 What You Get
+
+When you use this template, your project starts clean with only essential files:
 
 ```
-vibecode-starter/
-├── .claude/                    # Claude Code & Cursor configuration
-│   ├── config/                 # AI assistant configuration
-│   │   ├── PROJECT_CONFIG.md   # Stack configuration
-│   │   ├── INIT_PROMPTS.md     # Initialization examples
-│   │   ├── AGENT_EXAMPLES.md   # Agent usage examples
-│   │   └── DESCRIPTION.md      # Project description
-│   ├── .cursorrules            # Cursor IDE rules
-│   └── settings.local.json     # Local Claude settings
-├── config/                     # Build & development configs
-│   ├── .eslintrc.json          # ESLint configuration
-│   ├── .prettierrc             # Prettier configuration
-│   ├── tailwind.config.js      # Tailwind CSS configuration
-│   ├── tsconfig.json           # TypeScript configuration
-│   └── vite.config.ts          # Vite bundler configuration
-├── docs/                       # Documentation
-│   ├── agents/                 # 29 specialized Sub-Agents
-│   └── guides/                 # User guides and cheat sheets
-├── CLAUDE.md                   # Main Claude Code instructions (root required)
-├── package.json                # Project dependencies
-├── postcss.config.js           # PostCSS configuration
-└── LICENSE                     # MIT License
+your-project/
+├── config/                     # Build configurations
+│   ├── .eslintrc.json
+│   ├── .prettierrc
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   └── vite.config.ts
+├── src/                        # Your application code (to be created)
+├── CLAUDE.md                   # Simple Claude Code instructions
+├── package.json                # Dependencies
+├── postcss.config.js
+├── .gitignore                  # Includes claude-starter/
+└── LICENSE
 ```
+
+## 📚 Claude Starter Kit (Downloaded Separately)
+
+After cloning, the full documentation and Sub-Agents are available locally in `claude-starter/`:
+
+```
+claude-starter/                 # Ignored by git (local only)
+├── .claude/                    # Claude configuration
+│   ├── config/                 # PROJECT_CONFIG, INIT_PROMPTS, etc.
+│   └── .cursorrules           
+├── docs/                       
+│   ├── agents/                 # 29 specialized Sub-Agents
+│   └── guides/                 # All user guides
+└── CLAUDE_FULL.md              # Full instructions
+```
+
+**Note:** The `claude-starter/` directory is automatically ignored by git, keeping your repository clean while providing all helper files locally.
 
 ## 🤖 NEW: Sub-Agents System
 
