@@ -33,13 +33,21 @@ All documentation is located in the `docs/` folder.
 
 ```
 vibecode-starter/
+├── .claude/                    # Claude Code configuration
+│   ├── config/                 # Project configuration files
+│   │   ├── PROJECT_CONFIG.md   # Stack configuration
+│   │   ├── INIT_PROMPTS.md     # Initialization examples
+│   │   └── AGENT_EXAMPLES.md   # Agent usage examples
+│   └── settings.local.json     # Local Claude settings
 ├── docs/                       # All documentation and cheat sheets
+│   ├── agents/                 # 29 specialized Sub-Agents
 │   ├── USER_GUIDE.md           # Complete user guide
 │   ├── NEW_PROJECT_GUIDE.md    # Step-by-step startup
 │   ├── MOBILE_APP_GUIDE.md     # Mobile development guide
 │   ├── CURSOR_README.md        # Cursor-specific guide
 │   ├── VIBECODE.md             # Project standards
-│   ├── ...                     # All other guides and cheat sheets
+│   └── ...                     # All other guides and cheat sheets
+├── CLAUDE.md                   # Main Claude Code instructions (root required)
 ├── src/                        # Your app code
 ├── package.json
 └── ...

@@ -20,6 +20,11 @@ When starting a new project from this template, use one of these initialization 
 "Configure project stack"
 ```
 
+📁 **Configuration Files:**
+- `.claude/config/PROJECT_CONFIG.md` - Project stack configuration
+- `.claude/config/INIT_PROMPTS.md` - All initialization examples
+- `.claude/config/AGENT_EXAMPLES.md` - Agent usage examples
+
 ### Auto-Detection & Configuration
 When you start working on this project, I will:
 1. **Detect or ask** about your project type (Web/Mobile/API/Full-stack)
@@ -220,6 +225,7 @@ When you see placeholders below, Claude Code will ask you to specify:
 ### Current Configuration
 ```yaml
 # ACTIVE PROJECT CONFIGURATION
+# See .claude/config/PROJECT_CONFIG.md for full configuration
 Project Type: [TO BE DETERMINED ON INIT]
 Primary Backend: [Supabase/Firebase/AWS/Custom]
 Mobile Platform: [React Native/Flutter/iOS/None]
