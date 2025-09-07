@@ -12,22 +12,53 @@ VIBECODE STARTER provides:
 - ✅ Comprehensive cheat sheets and guides
 - ✅ Best practices for professional developers
 
-## 🚀 How to start a new project (Template Method)
+## 🚀 How to Use This Template
 
-1. **Click "Use this template"** on GitHub ([repo link](https://github.com/runehofstad/vibecode-starter)).
-2. Create your new repository (choose name and visibility).
-3. Clone your new repository to your local machine:
-   ```sh
-   git clone https://github.com/your-username/your-new-repo.git
-   cd your-new-repo
-   ```
-4. Install dependencies and start coding!
-   ```sh
-   npm install
-   npm run dev
-   ```
+### Step 1: Create Your Project
+1. **Click "Use this template"** button on [GitHub](https://github.com/runehofstad/vibecode-starter)
+2. Name your new repository
+3. Choose Public or Private
+4. Click **"Create repository from template"**
 
-All documentation is located in the `docs/` folder.
+### Step 2: Clone and Setup
+```bash
+# Clone your new repository
+git clone https://github.com/your-username/your-new-repo.git
+cd your-new-repo
+
+# Install dependencies
+npm install
+```
+
+### Step 3: Initialize with Claude Code
+Open Claude Code and run one of these commands:
+```bash
+"Initialize as React web app with Supabase"
+"Initialize as React Native mobile app"
+"Initialize as Next.js full-stack app"
+"Initialize as API backend"
+"Analyze and configure project"  # Auto-detect
+```
+
+### Step 4: Add Helper Files to Your .gitignore
+**IMPORTANT:** Keep your repo clean by adding this to YOUR project's `.gitignore`:
+```bash
+# Add claude-starter to your gitignore
+echo -e "\n# Claude helper files (local only)\nclaude-starter/\n.claude/" >> .gitignore
+git add .gitignore
+git commit -m "Add claude-starter to gitignore"
+```
+
+### Step 5: Start Development
+```bash
+npm run dev
+```
+
+You now have:
+- ✅ Clean project repository (only your code in git)
+- ✅ All 29 Sub-Agents available locally
+- ✅ Full documentation in `claude-starter/docs/`
+- ✅ Claude Code fully configured and ready
 
 ## 📦 What You Get
 
