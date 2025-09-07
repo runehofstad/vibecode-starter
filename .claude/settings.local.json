@@ -5,7 +5,9 @@
       "Bash(ls:*)",
       "Bash(find:*)",
       "Bash(claude config --help)",
-      "Bash(claude config list)"
+      "Bash(claude config list)",
+      "Bash(cat:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }

@@ -49,6 +49,14 @@ vibecode-starter/
 
 Leverage **29 specialized AI agents** for different development tasks:
 
+### ⚠️ IMPORTANT: How to Activate Sub-Agents
+
+**Sub-Agents are NOT automatic!** You must explicitly tell Claude Code to use them:
+
+1. **CLAUDE.md file now included** - This helps Claude Code recognize when to use agents
+2. **Explicit references required** - Always mention the agent file when giving tasks
+3. **See AGENT_EXAMPLES.md** for complete usage examples
+
 ### Core Development Agents
 - **Frontend Agent** – React, TypeScript, UI/UX development
 - **Backend Agents** – Supabase, Firebase, AWS backends
@@ -69,16 +77,25 @@ Leverage **29 specialized AI agents** for different development tasks:
 - **Email/Communication Agent** – Transactional email, SMS, push
 - **And 14 more specialized agents...**
 
-### Quick Example
-```bash
-# Use specific agent for specialized task
-claude --agent docs/agents/frontend-agent.md "Create responsive dashboard"
+### 🚀 Quick Start - How to Use Agents
 
-# Orchestrate multiple agents for complex features
-claude --orchestrate "Build complete authentication system"
+```bash
+# ✅ CORRECT - Explicitly reference the agent
+claude "Use docs/agents/frontend-agent.md to create a responsive dashboard"
+
+# ✅ CORRECT - Multiple agents for complex tasks
+claude "Read frontend-agent.md and backend-agent.md, then build user authentication"
+
+# ❌ WRONG - No agent reference (Claude won't use agents)
+claude "Create a dashboard"
 ```
 
-See `docs/SUB_AGENTS.md` and `docs/SUB_AGENT_WORKFLOW.md` for complete documentation.
+### Key Files for Agent Usage
+- **`CLAUDE.md`** - Auto-instructs Claude to use agents (NEW!)
+- **`AGENT_EXAMPLES.md`** - Complete usage examples (NEW!)
+- **`docs/SUB_AGENTS.md`** - Full agent documentation
+- **`docs/SUB_AGENT_WORKFLOW.md`** - Orchestration patterns
+- **`docs/agents/`** - Individual agent specifications
 
 ## 📚 Documentation
 
