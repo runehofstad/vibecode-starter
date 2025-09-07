@@ -33,24 +33,27 @@ All documentation is located in the `docs/` folder.
 
 ```
 vibecode-starter/
-├── .claude/                    # Claude Code configuration
-│   ├── config/                 # Project configuration files
+├── .claude/                    # Claude Code & Cursor configuration
+│   ├── config/                 # AI assistant configuration
 │   │   ├── PROJECT_CONFIG.md   # Stack configuration
 │   │   ├── INIT_PROMPTS.md     # Initialization examples
-│   │   └── AGENT_EXAMPLES.md   # Agent usage examples
+│   │   ├── AGENT_EXAMPLES.md   # Agent usage examples
+│   │   └── DESCRIPTION.md      # Project description
+│   ├── .cursorrules            # Cursor IDE rules
 │   └── settings.local.json     # Local Claude settings
-├── docs/                       # All documentation and cheat sheets
+├── config/                     # Build & development configs
+│   ├── .eslintrc.json          # ESLint configuration
+│   ├── .prettierrc             # Prettier configuration
+│   ├── tailwind.config.js      # Tailwind CSS configuration
+│   ├── tsconfig.json           # TypeScript configuration
+│   └── vite.config.ts          # Vite bundler configuration
+├── docs/                       # Documentation
 │   ├── agents/                 # 29 specialized Sub-Agents
-│   ├── USER_GUIDE.md           # Complete user guide
-│   ├── NEW_PROJECT_GUIDE.md    # Step-by-step startup
-│   ├── MOBILE_APP_GUIDE.md     # Mobile development guide
-│   ├── CURSOR_README.md        # Cursor-specific guide
-│   ├── VIBECODE.md             # Project standards
-│   └── ...                     # All other guides and cheat sheets
+│   └── guides/                 # User guides and cheat sheets
 ├── CLAUDE.md                   # Main Claude Code instructions (root required)
-├── src/                        # Your app code
-├── package.json
-└── ...
+├── package.json                # Project dependencies
+├── postcss.config.js           # PostCSS configuration
+└── LICENSE                     # MIT License
 ```
 
 ## 🤖 NEW: Sub-Agents System
