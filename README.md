@@ -49,12 +49,12 @@ your-project/
 └── LICENSE
 ```
 
-## 📚 Claude Starter Kit (Downloaded Separately)
+## 📚 Claude Starter Kit
 
-After cloning, the full documentation and Sub-Agents are available locally in `claude-starter/`:
+The template includes full documentation and Sub-Agents in `claude-starter/`:
 
 ```
-claude-starter/                 # Ignored by git (local only)
+claude-starter/                 # All Claude helper files
 ├── .claude/                    # Claude configuration
 │   ├── config/                 # PROJECT_CONFIG, INIT_PROMPTS, etc.
 │   └── .cursorrules           
@@ -64,7 +64,16 @@ claude-starter/                 # Ignored by git (local only)
 └── CLAUDE_FULL.md              # Full instructions
 ```
 
-**Note:** The `claude-starter/` directory is automatically ignored by git, keeping your repository clean while providing all helper files locally.
+### ⚠️ IMPORTANT: After creating your project
+
+**Add to YOUR project's .gitignore:**
+```gitignore
+# Claude helper files (keep locally, don't commit to your project)
+claude-starter/
+.claude/
+```
+
+This keeps your project repository clean while maintaining access to all helper files locally.
 
 ## 🤖 NEW: Sub-Agents System
 

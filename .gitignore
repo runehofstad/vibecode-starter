@@ -105,6 +105,6 @@ ui-debug.log
 .aws-sam/
 samconfig.toml
 
-# Claude Starter Kit (local helper files)
-claude-starter/
-.claude/
+# IMPORTANT: After using this template, add these lines to YOUR project's .gitignore:
+# claude-starter/
+# .claude/

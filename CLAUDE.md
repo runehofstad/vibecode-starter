@@ -40,10 +40,16 @@ Based on your project type, I will automatically load relevant Sub-Agents from `
 
 ## 📝 Important Notes
 
-1. The `claude-starter/` directory is ignored by git (local helper files only)
-2. Full documentation is in `claude-starter/docs/`
-3. Project configuration is in `claude-starter/.claude/config/PROJECT_CONFIG.md`
-4. For detailed instructions, see `claude-starter/CLAUDE_FULL.md`
+1. Full documentation is in `claude-starter/docs/`
+2. Project configuration is in `claude-starter/.claude/config/PROJECT_CONFIG.md`
+3. For detailed instructions, see `claude-starter/CLAUDE_FULL.md`
+
+### ⚠️ After Using This Template
+
+When you create your own project from this template:
+1. Use all the helper files in `claude-starter/` for development
+2. Add `claude-starter/` to YOUR project's .gitignore
+3. This keeps your project repo clean while maintaining local access to all helpers
 
 ## Current Project Configuration
 
