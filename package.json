@@ -15,7 +15,9 @@
     "lint": "eslint . -c config/.eslintrc.json --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --config config/.prettierrc --write \"src/**/*.{ts,tsx,css,md}\"",
     "type-check": "tsc -p config/tsconfig.json --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "agents:gen": "node scripts/agents/generate.mjs",
+    "agents:list": "node scripts/agents/list.mjs"
   },
   "dependencies": {
     "react": "^18.2.0",

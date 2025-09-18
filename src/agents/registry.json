@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2025-09-17T13:58:51.010Z",
+  "agents": [
+    {
+      "id": "accessibility-agent",
+      "name": "Accessibility",
+      "filename": "accessibility-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/accessibility-agent.md",
+      "summary": "Expert accessibility specialist ensuring web and mobile applications are usable by everyone, including people with disabilities, following WCAG guidelines and best practices."
+    },
+    {
+      "id": "ai-ml-integration-agent",
+      "name": "Ai Ml Integration",
+      "filename": "ai-ml-integration-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/ai-ml-integration-agent.md",
+      "summary": "Expert AI/ML engineer specializing in integrating artificial intelligence and machine learning capabilities into applications, including LLMs, embeddings, vector databases, and ..."
+    },
+    {
+      "id": "api-graphql-agent",
+      "name": "Api Graphql",
+      "filename": "api-graphql-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/api-graphql-agent.md",
+      "summary": "Expert API architect specializing in RESTful and GraphQL API design, implementation, documentation, and best practices for scalable, maintainable APIs."
+    },
+    {
+      "id": "aws-backend-agent",
+      "name": "AWS Backend",
+      "filename": "aws-backend-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/aws-backend-agent.md",
+      "summary": "Expert AWS architect and developer specializing in serverless architecture, microservices, and cloud-native solutions using AWS services ecosystem."
+    },
+    {
+      "id": "backend-agent",
+      "name": "Backend",
+      "filename": "backend-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/backend-agent.md",
+      "summary": "Expert backend developer specializing in Supabase, PostgreSQL, and API development with focus on security, performance, and scalability."
+    },
+    {
+      "id": "bankid-agent",
+      "name": "Bankid",
+      "filename": "bankid-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/bankid-agent.md",
+      "summary": "Specialist for Norwegian BankID authentication and electronic signature integration, supporting both BankID on mobile and BankID with code device. Expert in secure identity veri..."
+    },
+    {
+      "id": "cli-agent",
+      "name": "Cli",
+      "filename": "cli-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/cli-agent.md",
+      "summary": "Expert command-line interface developer and DevOps engineer specializing in terminal operations, automation scripts, CLI tools development, and system administration across Unix..."
+    },
+    {
+      "id": "data-agent",
+      "name": "Data",
+      "filename": "data-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/data-agent.md",
+      "summary": "Expert data engineer and database architect specializing in database optimization, query performance, analytics implementation, data pipelines, and business intelligence solutions."
+    },
+    {
+      "id": "database-migration-agent",
+      "name": "Database Migration",
+      "filename": "database-migration-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/database-migration-agent.md",
+      "summary": "Expert database architect specializing in schema migrations, data transformations, version control for databases, and safe deployment strategies across different database systems."
+    },
+    {
+      "id": "design-agent",
+      "name": "Design",
+      "filename": "design-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/design-agent.md",
+      "summary": "Expert UI/UX designer and design system architect specializing in creating consistent, accessible, and beautiful user interfaces with design tokens, component libraries, and Fig..."
+    },
+    {
+      "id": "devops-agent",
+      "name": "Devops",
+      "filename": "devops-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/devops-agent.md",
+      "summary": "Expert DevOps engineer specializing in CI/CD pipelines, infrastructure as code, deployment automation, monitoring, and cloud platform management for scalable applications."
+    },
+    {
+      "id": "docker-container-agent",
+      "name": "Docker Container",
+      "filename": "docker-container-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/docker-container-agent.md",
+      "summary": "Expert containerization specialist focusing on Docker, Kubernetes, and cloud-native application deployment with emphasis on security, optimization, and orchestration."
+    },
+    {
+      "id": "documentation-agent",
+      "name": "Documentation",
+      "filename": "documentation-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/documentation-agent.md",
+      "summary": "Expert technical writer and documentation architect specializing in creating comprehensive, maintainable, and user-friendly documentation for software projects, APIs, and develo..."
+    },
+    {
+      "id": "email-communication-agent",
+      "name": "Email Communication",
+      "filename": "email-communication-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/email-communication-agent.md",
+      "summary": "Expert communication specialist focusing on email delivery, SMS messaging, push notifications, and multi-channel communication strategies for transactional and marketing messages."
+    },
+    {
+      "id": "firebase-backend-agent",
+      "name": "Firebase Backend",
+      "filename": "firebase-backend-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/firebase-backend-agent.md",
+      "summary": "Expert Firebase developer specializing in Firebase ecosystem services including Firestore, Authentication, Cloud Functions, Storage, and Hosting with focus on real-time features..."
+    },
+    {
+      "id": "flutter-agent",
+      "name": "Flutter",
+      "filename": "flutter-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/flutter-agent.md",
+      "summary": "Expert Flutter developer specializing in cross-platform mobile development for iOS and Android with Material Design 3, Cupertino widgets, and platform-specific integrations."
+    },
+    {
+      "id": "frontend-agent",
+      "name": "Frontend",
+      "filename": "frontend-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/frontend-agent.md",
+      "summary": "Expert React and TypeScript developer specializing in modern web UI/UX development with focus on performance, accessibility, and responsive design."
+    },
+    {
+      "id": "git-github-agent",
+      "name": "Git Github",
+      "filename": "git-github-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/git-github-agent.md",
+      "summary": "Expert version control specialist and GitHub workflow architect specializing in Git operations, GitHub Actions, pull request management, and collaborative development workflows."
+    },
+    {
+      "id": "ios-swift-agent",
+      "name": "Ios Swift",
+      "filename": "ios-swift-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/ios-swift-agent.md",
+      "summary": "Expert iOS developer specializing in native Swift development with SwiftUI, UIKit, and Apple ecosystem integration following Apple's Human Interface Guidelines."
+    },
+    {
+      "id": "localization-agent",
+      "name": "Localization",
+      "filename": "localization-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/localization-agent.md",
+      "summary": "Expert internationalization and localization specialist ensuring applications support multiple languages, regions, and cultural conventions with proper translation management an..."
+    },
+    {
+      "id": "mobile-agent",
+      "name": "Mobile",
+      "filename": "mobile-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/mobile-agent.md",
+      "summary": "Expert React Native developer specializing in cross-platform mobile application development using React Native, Expo, and native module integration for iOS and Android."
+    },
+    {
+      "id": "monitoring-observability-agent",
+      "name": "Monitoring Observability",
+      "filename": "monitoring-observability-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/monitoring-observability-agent.md",
+      "summary": "Expert observability engineer specializing in application monitoring, distributed tracing, log aggregation, and metrics collection for comprehensive system visibility and perfor..."
+    },
+    {
+      "id": "payment-agent",
+      "name": "Payment",
+      "filename": "payment-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/payment-agent.md",
+      "summary": "Expert payment integration specialist focusing on payment processing, subscription management, e-commerce functionality, and financial compliance across multiple payment provide..."
+    },
+    {
+      "id": "pwa-offline-agent",
+      "name": "Pwa Offline",
+      "filename": "pwa-offline-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/pwa-offline-agent.md",
+      "summary": "Expert Progressive Web App developer specializing in offline functionality, service workers, caching strategies, and native-like web application experiences across all devices."
+    },
+    {
+      "id": "security-agent",
+      "name": "Security",
+      "filename": "security-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/security-agent.md",
+      "summary": "Expert security engineer specializing in application security, authentication, authorization, vulnerability management, GDPR compliance, and security best practices for web and ..."
+    },
+    {
+      "id": "seo-marketing-agent",
+      "name": "Seo Marketing",
+      "filename": "seo-marketing-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/seo-marketing-agent.md",
+      "summary": "Expert digital marketing specialist focusing on search engine optimization, analytics implementation, conversion optimization, and growth strategies for web and mobile applicati..."
+    },
+    {
+      "id": "testing-agent",
+      "name": "Testing",
+      "filename": "testing-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/testing-agent.md",
+      "summary": "Expert QA engineer specializing in comprehensive testing strategies including unit, integration, E2E, performance, and accessibility testing for web and mobile applications."
+    },
+    {
+      "id": "websocket-realtime-agent",
+      "name": "Websocket Realtime",
+      "filename": "websocket-realtime-agent.md",
+      "path": "/workspace/claude-starter/docs/agents/websocket-realtime-agent.md",
+      "summary": "Expert realtime communication specialist focusing on WebSocket implementations, real-time data synchronization, live updates, chat systems, and collaborative features using vari..."
+    }
+  ]
+}
