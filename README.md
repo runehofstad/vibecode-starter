@@ -1,16 +1,15 @@
 # 🚀 VIBECODE STARTER
 
-A complete starter kit for efficient development with both Claude Code CLI and Cursor IDE.
+**Clean template for rapid development with Claude Code and 29 specialized Sub-Agents**
 
 ## ✨ What is this?
 
 VIBECODE STARTER provides:
-- ✅ Pre-configured standards for modern web and mobile development
-- ✅ **GitHub template** for instant project setup
-- ✅ **Sub-Agents system** for specialized development tasks (NEW!)
-- ✅ Context7 integration for up-to-date documentation
-- ✅ Comprehensive cheat sheets and guides
-- ✅ Best practices for professional developers
+- 🤖 **29 specialized Sub-Agents** for expert-level development in any domain
+- ⚡ **Zero setup time** - pre-configured build tools, linting, testing
+- 🎯 **Clean project structure** - only essential files in your repo
+- 📚 **Comprehensive documentation** - guides for every scenario
+- 🚀 **From idea to deployed app in hours, not days**
 
 ## 🚀 How to Use This Template
 

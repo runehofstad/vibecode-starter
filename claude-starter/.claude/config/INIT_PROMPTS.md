@@ -37,6 +37,39 @@ Copy and paste one of these to quickly initialize your project:
 "Initialize as CLI tool with Node.js"
 "Initialize as Chrome extension with React"
 "Initialize as Progressive Web App with offline support"
+
+# Widget Development
+"Initialize as GoodBarber widget with HTML/CSS/JS"
+"Initialize as standalone widget library"
+"Initialize as embeddable JavaScript widget"
+"Initialize as Web Component library"
+"Initialize as iframe-based widget for third-party embedding"
+
+# Platform Integrations
+"Initialize as GoodBarber API integration service"
+"Initialize as Shopify app with Polaris UI"
+"Initialize as WordPress plugin with admin panel"
+"Initialize as Slack app with slash commands"
+"Initialize as Microsoft Teams app"
+"Initialize as Stripe app for marketplace"
+
+# Game & Creative
+"Initialize as web game with Phaser.js"
+"Initialize as Three.js 3D visualization"
+"Initialize as creative coding project with p5.js"
+"Initialize as WebGL shader playground"
+
+# Data & Analytics
+"Initialize as data visualization dashboard with D3.js"
+"Initialize as analytics tracking service"
+"Initialize as business intelligence tool"
+"Initialize as real-time monitoring dashboard"
+
+# IoT & Edge
+"Initialize as IoT device dashboard"
+"Initialize as Raspberry Pi web interface"
+"Initialize as home automation controller"
+"Initialize as sensor data collector"
 ```
 
 ## 📋 Interactive Initialization
@@ -132,6 +165,18 @@ When you have existing code:
 "Initialize internal tool with authentication and audit logging"
 ```
 **Optimizes for:** Security, logging, admin features
+
+### Widget/Plugin Development
+```bash
+"Initialize widget development environment with hot reload"
+```
+**Optimizes for:** Embeddability, size optimization, cross-site compatibility
+
+### Platform Extension
+```bash
+"Initialize platform extension with SDK integration"
+```
+**Optimizes for:** Platform compliance, API integration, marketplace ready
 
 ## 🤖 Agent-Specific Initialization
 

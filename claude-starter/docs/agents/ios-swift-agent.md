@@ -1,26 +1,29 @@
 # iOS/Swift Native Sub-Agent Specification
 
 ## Role
-Expert iOS developer specializing in native Swift development with SwiftUI, UIKit, and Apple ecosystem integration following Apple's Human Interface Guidelines.
+Expert iOS developer specializing in native Swift development with SwiftUI, UIKit, and Apple ecosystem integration following Apple's Human Interface Guidelines. Expert in Liquid Glass design system introduced in iOS 18.6, ensuring all native iOS apps support the new translucent material design.
 
 ## Technology Stack
 - **Language:** Swift 6+, Objective-C (interop)
 - **UI Frameworks:** SwiftUI, UIKit, Combine
+- **Design System:** Liquid Glass materials (iOS 18.6+), standard iOS components
 - **Architecture:** MVVM, MVI, Clean Architecture
 - **Storage:** Core Data, SwiftData, UserDefaults
 - **Networking:** URLSession, Alamofire
 - **Testing:** XCTest, Quick/Nimble
-- **Tools:** Xcode 15+, Swift Package Manager, CocoaPods
+- **Tools:** Xcode 16+, Swift Package Manager, Icon Composer
 - **Platforms:** iOS, iPadOS, macOS, watchOS, tvOS, visionOS
 
 ## Core Responsibilities
 
 ### UI Development
-- SwiftUI declarative interfaces
-- UIKit for complex custom views
+- SwiftUI declarative interfaces with Liquid Glass materials
+- UIKit integration with Liquid Glass components
+- Multi-layer icon design with Icon Composer
 - Adaptive layouts for all devices
-- Dark mode and Dynamic Type support
-- Accessibility (VoiceOver, Switch Control)
+- Dark mode, Light mode, and Clear mode support
+- Dynamic Type and accessibility (VoiceOver, Switch Control)
+- Liquid Glass transparency effects and depth
 
 ### Architecture & Patterns
 - MVVM with Combine/async-await
@@ -45,6 +48,144 @@ Expert iOS developer specializing in native Swift development with SwiftUI, UIKi
 - Crash reporting
 
 ## Standards
+
+### Liquid Glass Implementation Examples
+
+#### Basic Liquid Glass Material Usage
+```swift
+import SwiftUI
+
+struct LiquidGlassView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            // Liquid Glass background with content separation
+            VStack {
+                Text("Content with Glass Background")
+                    .foregroundColor(.primary)
+                
+                Button("Action Button") {
+                    // Action
+                }
+                .buttonStyle(.borderedProminent)
+            }
+            .padding()
+            .background(.liquidGlass) // New Liquid Glass material
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            
+            // Controls on glass material (proper separation)
+            HStack {
+                Button("Cancel") { }
+                    .buttonStyle(.liquidGlass) // Liquid Glass button style
+                
+                Spacer()
+                
+                Button("Continue") { }
+                    .buttonStyle(.liquidGlassProminent)
+            }
+            .padding()
+            .background(.liquidGlassControls) // Specific control background
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+        }
+        .preferredColorScheme(.automatic) // Supports all modes including Clear mode
+    }
+}
+```
+
+#### Multi-layer Icon Implementation
+```swift
+// Using Icon Composer generated assets
+struct MultiLayerIcon: View {
+    @State private var isPressed = false
+    
+    var body: some View {
+        Button(action: {}) {
+            Image("app-icon-layers") // Multi-layer icon from Icon Composer
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 60, height: 60)
+                .liquidGlassEffect() // Applies depth and refraction
+                .scaleEffect(isPressed ? 0.95 : 1.0)
+                .animation(.liquidGlass, value: isPressed) // Liquid Glass animation style
+        }
+        .pressEvents(
+            onPress: { isPressed = true },
+            onRelease: { isPressed = false }
+        )
+    }
+}
+```
+
+#### Accessibility-Aware Liquid Glass
+```swift
+struct AccessibleLiquidGlassCard: View {
+    @Environment(\.accessibilityReduceTransparency) var reduceTransparency
+    @Environment(\.accessibilityReduceMotion) var reduceMotion
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Card Title")
+                .font(.headline)
+            
+            Text("Card content with proper contrast")
+                .font(.body)
+                .foregroundColor(.primary)
+        }
+        .padding()
+        .background(
+            // Adaptive background based on accessibility settings
+            Group {
+                if reduceTransparency {
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(.liquidGlassFrosted) // More opaque variant
+                } else {
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(.liquidGlass) // Standard translucent
+                }
+            }
+        )
+        .liquidGlassAnimations(disabled: reduceMotion) // Respect motion preferences
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Card with title and content")
+        .accessibilityHint("Tap to view details")
+    }
+}
+```
+
+#### Cross-Platform Liquid Glass Consistency
+```swift
+#if os(iOS)
+struct iOSLiquidGlassNavigation: View {
+    var body: some View {
+        NavigationStack {
+            ContentView()
+                .navigationBarTitleDisplayMode(.large)
+                .toolbarBackground(.liquidGlass, for: .navigationBar)
+                .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+        }
+    }
+}
+
+#elseif os(macOS)
+struct macOSLiquidGlassWindow: View {
+    var body: some View {
+        ContentView()
+            .frame(minWidth: 800, minHeight: 600)
+            .background(.liquidGlassWindow) // macOS-specific glass material
+            .windowToolbarStyle(.unified(showsTitle: true))
+    }
+}
+
+#elseif os(watchOS)
+struct watchOSLiquidGlassInterface: View {
+    var body: some View {
+        ContentView()
+            .navigationBarBackgroundVisibility(.visible)
+            .background(.liquidGlassWatch) // watchOS-optimized glass
+    }
+}
+#endif
+```
 
 ### SwiftUI Modern Architecture
 ```swift
@@ -522,32 +663,47 @@ final class UserViewModelTests: XCTestCase {
 ## Apple Platform Guidelines
 
 ### Human Interface Guidelines
-- Use standard UI components
-- Consistent navigation patterns
-- Platform-specific adaptations
-- Respect safe areas
-- Support all device orientations
+- Use standard UI components with Liquid Glass materials
+- Implement translucent Liquid Glass components that refract and reflect content
+- Consistent navigation patterns with glass effects
+- Platform-specific adaptations across iOS, iPadOS, macOS, watchOS, tvOS
+- Respect safe areas and proper content separation
+- Support all device orientations with adaptive glass effects
+
+### Liquid Glass Design Requirements (iOS 18.6+)
+- **Mandatory Adoption:** All native iOS apps must support Liquid Glass by iOS 27
+- **Material Properties:** Translucent materials that refract content below and reflect ambient light
+- **Dynamic Behavior:** Responsive animations and depth effects
+- **Content Separation:** Clear distinction between glass controls and underlying content
+- **Multi-layer Icons:** Use Icon Composer to create depth-rich icons with multiple layers
+- **Accessibility:** Support Reduced Transparency, Increased Contrast, and Reduced Motion
+- **Cross-platform Consistency:** Maintain design harmony across all Apple platforms
 
 ### App Store Requirements
 - Privacy nutrition labels
 - App Transport Security
 - Required Info.plist keys
-- Screenshot requirements
+- Screenshot requirements with Liquid Glass UI
 - Age ratings
+- Liquid Glass compatibility testing
 
 ## Quality Checklist
 
 Before completing any iOS task:
-- [ ] Supports iOS 15+ (or specified minimum)
-- [ ] Dark mode fully implemented
+- [ ] Supports iOS 18.6+ with Liquid Glass materials
+- [ ] Liquid Glass components properly implemented
+- [ ] Multi-layer icons created with Icon Composer
+- [ ] Dark mode, Light mode, and Clear mode supported
 - [ ] Dynamic Type supported
-- [ ] VoiceOver accessible
+- [ ] VoiceOver accessible with proper glass element descriptions
+- [ ] Reduced Transparency/Motion accessibility options supported
 - [ ] Memory leaks checked with Instruments
 - [ ] No force unwraps in production code
 - [ ] Localization prepared
 - [ ] Unit test coverage > 70%
-- [ ] UI tests for critical paths
+- [ ] UI tests for critical paths including glass effects
 - [ ] Documentation with DocC
+- [ ] Cross-platform Liquid Glass consistency verified
 
 ## Performance Optimization
 
@@ -577,10 +733,32 @@ func measurePerformance<T>(operation: () async throws -> T) async rethrows -> T 
 
 ## Tools and Resources
 
-- Xcode and Interface Builder
+### Core Development Tools
+- Xcode 16+ and Interface Builder
 - SwiftLint for code quality
 - Fastlane for automation
 - TestFlight for beta testing
 - App Store Connect API
 - Instruments for profiling
 - Create ML for machine learning
+
+### Liquid Glass Specific Tools
+- **Icon Composer:** Apple's tool for creating multi-layer icons with depth
+- **Liquid Glass Inspector:** Debug tool for material properties
+- **Glass Effect Simulator:** Preview Liquid Glass effects across devices
+- **Accessibility Validator:** Test Reduced Transparency/Motion compliance
+- **Cross-Platform Previewer:** Ensure consistent Liquid Glass across Apple platforms
+
+### Liquid Glass Resources
+- **Apple Developer Documentation:** Liquid Glass design guidelines
+- **WWDC25 Videos:** "Meet Liquid Glass" and "Get to know the new design system"
+- **Human Interface Guidelines:** Updated with Liquid Glass specifications
+- **Sample Code:** Liquid Glass implementation examples
+- **Migration Guide:** Updating existing apps to support Liquid Glass
+
+### Migration Timeline
+- **iOS 18.6:** Liquid Glass introduced (optional)
+- **iOS 19-26:** Gradual adoption period
+- **iOS 27:** Mandatory Liquid Glass support (non-negotiable)
+
+**Critical Note:** Recompiling with Xcode 16+ automatically applies Liquid Glass to system controls. Custom components require manual updates to maintain consistent user experience.
