@@ -17,20 +17,22 @@ npm install
 
 ## 💻 Working with Claude Code
 
-### Automatic Sub-Agent Activation
+### Getting Started
 
-**Claude Code automatically selects the right agents based on your task:**
+**Simply tell Claude what you want to build:**
 ```bash
-# Just describe what you want - Claude selects the right agents
-claude "Create a responsive dashboard with user authentication"
-# Claude automatically uses frontend-agent and backend-agent
-
-claude "Set up CI/CD pipeline with testing"
-# Claude automatically uses devops-agent and testing-agent
-
-claude "Implement payment solution with Stripe"
-# Claude automatically uses payment-agent
+# Start a conversation about your project
+"I want to build a web app with user authentication"
+"Help me create a mobile app"
+"I need an API backend with database"
+"What kind of project should we build?"
 ```
+
+**Claude will automatically:**
+1. Ask about your requirements
+2. Suggest the right technology stack
+3. Set up your project structure
+4. Load relevant Sub-Agents for your needs
 
 ### Automatically Available Sub-Agents
 
@@ -54,14 +56,11 @@ claude "Implement payment solution with Stripe"
 
 ### Usage Examples
 ```bash
-# Just describe the task - Claude handles the rest
-claude "Build a user profile feature with database and UI"
-
-claude "Create comprehensive tests and set up CI/CD"
-
-claude "Analyze performance and optimize the application"
-
-claude "Implement real-time chat with WebSocket"
+# Describe what you need - Claude handles the rest
+"Build a user profile feature with database and UI"
+"Create comprehensive tests and set up CI/CD"
+"Analyze performance and optimize the application"
+"Implement real-time chat with WebSocket"
 ```
 
 ### How It Works Behind the Scenes
@@ -104,8 +103,8 @@ your-project/
 git clone https://github.com/your-username/your-new-repo.git
 cd your-new-repo && npm install
 
-# 3. Start coding - Claude Code recognizes the project automatically!
-claude "What kind of project should we build?"
+# 3. Open in Claude Code and start building!
+# Simply describe what you want to create
 ```
 
 ## 📚 Complete Documentation

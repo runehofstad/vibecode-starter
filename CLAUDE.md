@@ -2,18 +2,18 @@
 
 ## 🚀 Quick Start
 
-This project uses the Vibecode Starter Kit. To initialize:
+This project uses the Vibecode Starter Kit. When the user wants to start a new project, help them by:
 
-```bash
-# Choose your project type:
-"Initialize as React web app with Supabase"
-"Initialize as React Native mobile app"
-"Initialize as Next.js full-stack app"
-"Initialize as API backend"
+1. **Asking what they want to build** - Get project requirements
+2. **Suggesting the right stack** - Based on their needs
+3. **Setting up the project** - Create necessary files and structure
+4. **Loading relevant Sub-Agents** - Based on chosen technology
 
-# Or auto-detect:
-"Analyze and configure project"
-```
+Example user requests you should handle:
+- "I want to build a web app with user authentication"
+- "Help me create a mobile app"
+- "I need an API backend with database"
+- "What kind of project should we build?"
 
 ## 📁 Claude Starter Kit Location
 
