@@ -1,0 +1,30 @@
+{
+  "name": "vibecode-starter",
+  "version": "3.0.0",
+  "description": "Universal AI agent system for Cursor IDE and Claude Code",
+  "author": "Vibecode Team",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runehofstad/vibecode-starter"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "cursor",
+    "claude",
+    "development",
+    "automation",
+    "coding-assistant"
+  ],
+  "files": [
+    "vibecode/",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  }
+}
