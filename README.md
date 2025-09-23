@@ -68,7 +68,7 @@ npm run vibecode:init
 ### Using Both?
 The installer configures for both automatically!
 
-## 🤖 Included Agents (28 Total)
+## 🤖 Included Agents (31 Total)
 
 ### Core Development
 - **frontend-agent** - React, Vue, TypeScript, UI components
@@ -101,6 +101,9 @@ The installer configures for both automatically!
 - **git-github-agent** - Version control
 - **cli-agent** - Command-line tools
 - **bankid-agent** - Norwegian BankID
+- **background-jobs-agent** - Task queues, cron jobs, workers
+- **caching-performance-agent** - Redis, CDN, performance optimization
+- **search-indexing-agent** - Elasticsearch, Algolia, full-text search
 
 ## 📁 Project Structure
 

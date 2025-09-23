@@ -35,6 +35,9 @@ When working with these file types, AUTOMATICALLY use these agents:
 | `*.swift`, `ios/*` | ios-swift-agent |
 | `*.dart`, `flutter/*` | flutter-agent |
 | `android/*` | mobile-agent |
+| `workers/*`, `jobs/*`, `queues/*` | background-jobs-agent |
+| `cache/*`, `redis/*` | caching-performance-agent |
+| `search/*`, `elasticsearch/*` | search-indexing-agent |
 
 ### Task-Based Automatic Agent Selection
 
@@ -47,7 +50,7 @@ When these keywords appear in requests, AUTOMATICALLY use these agents:
 | UI, interface, component, design | frontend-agent + design-agent |
 | test, testing, coverage, TDD | testing-agent |
 | deploy, deployment, CI/CD | devops-agent |
-| performance, optimize, speed | monitoring-observability-agent + data-agent |
+| performance, optimize, speed | caching-performance-agent + monitoring-observability-agent |
 | API, endpoint, REST, GraphQL | api-graphql-agent + backend-agent |
 | mobile, iOS, Android | mobile-agent |
 | security, encryption, vulnerability | security-agent |
@@ -58,6 +61,9 @@ When these keywords appear in requests, AUTOMATICALLY use these agents:
 | websocket, realtime, live | websocket-realtime-agent + backend-agent |
 | SEO, marketing, analytics | seo-marketing-agent |
 | i18n, localization, translation | localization-agent |
+| queue, cron, scheduled, job, worker | background-jobs-agent |
+| cache, redis, CDN, performance | caching-performance-agent |
+| search, elasticsearch, algolia, filter | search-indexing-agent |
 
 ## ORCHESTRATION PATTERNS
 

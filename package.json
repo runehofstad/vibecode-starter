@@ -25,6 +25,15 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "echo \"No tests yet\"",
+    "vibecode:setup": "node .vibecode/scripts/setup.js",
+    "vibecode:init": "node .vibecode/scripts/init.js",
+    "vibecode:analyze": "node .vibecode/orchestrator/analyzer.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "js-yaml": "^4.1.0"
   }
 }
