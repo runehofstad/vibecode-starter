@@ -10,7 +10,9 @@ Vibecode Starter is a comprehensive collection of 28 specialized AI agents that 
 
 - **28 Specialized AI Agents** - Frontend, backend, testing, security, and more
 - **Universal Compatibility** - Works with both Cursor and Claude Code
+- **Master Agent Orchestration** - Automatic agent selection and coordination
 - **Automatic Configuration** - Detects your stack and configures appropriately
+- **CLI Tool Detection** - Identifies and helps install needed CLI tools
 - **Project Analysis** - Understands your codebase structure
 - **Best Practices** - Enforces coding standards and patterns
 - **Zero Manual Setup** - One command does everything
@@ -58,9 +60,10 @@ npm run vibecode:setup
 ```bash
 npm run vibecode:init
 ```
-- Installs agents to `~/.claude/agents/`
-- Configures `CLAUDE.md` with guidelines
-- Sets up project routing
+- Installs agents globally to `~/.claude/agents/`
+- Sets up **Master Agent** for automatic orchestration
+- Configures `CLAUDE.md` with intelligent routing
+- Enables automatic agent selection based on file types and tasks
 
 ### Using Both?
 The installer configures for both automatically!
@@ -131,6 +134,7 @@ Vibecode analyzes your project to detect:
 - Database systems
 - Testing frameworks
 - Build tools
+- Required CLI tools (Supabase, Firebase, Vercel, etc.)
 
 ### 2. Intelligent Configuration
 Based on analysis, Vibecode:
@@ -138,10 +142,18 @@ Based on analysis, Vibecode:
 - Generates tool-specific configs
 - Sets up best practices
 - Configures coding standards
+- Detects and helps install missing CLIs
 
-### 3. Seamless Integration
+### 3. Master Agent Orchestration (Claude Code)
+The Master Agent automatically:
+- Reads file extensions to select appropriate agents
+- Analyzes task keywords to combine agent expertise
+- Orchestrates multiple agents for complex tasks
+- Reports which agents are being used
+
+### 4. Seamless Integration
 - **Cursor:** Reads `.cursorrules` automatically
-- **Claude Code:** Uses agents from `~/.claude/agents/`
+- **Claude Code:** Master Agent orchestrates from `~/.claude/agents/`
 - **Both:** Share the same agent knowledge base
 
 ## 🚀 Usage Examples
@@ -156,10 +168,16 @@ Based on analysis, Vibecode:
 ### In Claude Code
 ```
 "Build authentication system"
-# Vibecode suggests: security-agent, backend-agent, frontend-agent
+🤖 Vibecode Agent Orchestration:
+- Primary: security-agent
+- Supporting: backend-agent, frontend-agent
+# Master Agent automatically applies all three agent patterns
 
 "Optimize database queries"
-# Vibecode suggests: data-agent, monitoring-agent
+🤖 Vibecode Agent Orchestration:
+- Primary: data-agent
+- Supporting: monitoring-observability-agent
+# Master Agent combines optimization strategies from both agents
 ```
 
 ## 🔧 Commands
@@ -174,8 +192,8 @@ npm run vibecode:init
 # Analyze project structure
 npm run vibecode:analyze
 
-# List available agents
-npm run vibecode:list
+# Check for missing CLI tools
+./.vibecode/scripts/setup-cli.sh
 ```
 
 ## 📚 Documentation
