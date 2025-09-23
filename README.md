@@ -8,7 +8,7 @@ Vibecode Starter is a comprehensive collection of 28 specialized AI agents that 
 
 ## 🎯 Features
 
-- **28 Specialized AI Agents** - Frontend, backend, testing, security, and more
+- **31 Specialized AI Agents** - Frontend, backend, testing, security, and more
 - **Universal Compatibility** - Works with both Cursor and Claude Code
 - **Master Agent Orchestration** - Automatic agent selection and coordination
 - **Automatic Configuration** - Detects your stack and configures appropriately
