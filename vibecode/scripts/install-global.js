@@ -79,6 +79,16 @@ ${content}`;
   console.log(chalk.cyan('\n📍 Agents installed to:'), globalAgentsPath);
   console.log(chalk.cyan('📄 Mapping saved to:'), mappingPath);
 
+  // Install Master Agent
+  console.log(chalk.blue('\n🎯 Installing Master Agent...'));
+  const masterAgentSource = join(__dirname, '..', 'MASTER_AGENT.md');
+  const masterAgentTarget = join(globalAgentsPath, 'VIBECODE_MASTER_AGENT.md');
+
+  if (await fs.access(masterAgentSource).then(() => true).catch(() => false)) {
+    await fs.copyFile(masterAgentSource, masterAgentTarget);
+    console.log(chalk.green('✅ Master Agent installed!'));
+  }
+
   // Create CLAUDE.md with agent references
   await updateClaudeMdWithAgents(agentMapping);
 
@@ -98,32 +108,80 @@ async function updateClaudeMdWithAgents(agentMapping) {
   const projectRoot = process.cwd();
   const claudeMdPath = join(projectRoot, 'CLAUDE.md');
 
-  let claudeMdContent = '# Claude Code Configuration\n\n';
+  let claudeMdContent = `# Claude Code Configuration - Vibecode Master Agent Active
 
-  claudeMdContent += '## Vibecode Agents Installed\n\n';
-  claudeMdContent += 'The following agents are globally available in ~/.claude/agents/:\n\n';
+## 🎯 MASTER AGENT ORCHESTRATION ENABLED
+
+**IMPORTANT: The Vibecode Master Agent is installed and will orchestrate all agent interactions.**
+
+You MUST read and follow the instructions in:
+\`~/.claude/agents/VIBECODE_MASTER_AGENT.md\`
+
+This file contains critical orchestration rules that you MUST follow for ALL tasks.
+
+## Automatic Agent Selection
+
+The Master Agent will automatically select and use these agents based on your work:
+
+### File-Based Triggers
+- \`*.tsx, *.jsx\` → frontend-agent + design-agent
+- \`api/*, server/*\` → backend-agent + api-graphql-agent
+- \`*.test.*, *.spec.*\` → testing-agent
+- \`auth/*, security/*\` → security-agent + backend-agent
+
+### Task-Based Triggers
+- "authentication" → security-agent + backend-agent + frontend-agent
+- "database" → data-agent + database-migration-agent
+- "UI/component" → frontend-agent + design-agent
+- "testing" → testing-agent
+- "deployment" → devops-agent
+
+## Installed Agents
+
+The following specialized agents are available in ~/.claude/agents/:
+
+`;
 
   for (const [key, agent] of Object.entries(agentMapping)) {
     claudeMdContent += `- **${agent.name}**: ~/.claude/agents/${agent.file}\n`;
   }
 
-  claudeMdContent += `\n## How to Use Agents\n\n`;
-  claudeMdContent += `Claude Code will automatically read these agents as context.\n`;
-  claudeMdContent += `Reference them in your prompts:\n\n`;
-  claudeMdContent += `\`\`\`\n`;
-  claudeMdContent += `"Use the frontend-agent approach for this component"\n`;
-  claudeMdContent += `"Follow backend-agent patterns for the API"\n`;
-  claudeMdContent += `"Apply testing-agent standards"\n`;
-  claudeMdContent += `\`\`\`\n\n`;
-  claudeMdContent += `## Agent Orchestration\n\n`;
-  claudeMdContent += `The Vibecode orchestrator will suggest agent combinations for tasks.\n`;
-  claudeMdContent += `While Claude can't directly invoke custom agents via Task tool,\n`;
-  claudeMdContent += `it will read and apply their patterns from ~/.claude/agents/\n\n`;
-  claudeMdContent += `---\n\n`;
-  claudeMdContent += `*Powered by Vibecode Claude Code Edition*\n`;
+  claudeMdContent += `
+## Expected Behavior
+
+For EVERY task, you should:
+1. Start with: "🤖 Vibecode Agent Orchestration: [agents being used]"
+2. Read the relevant agent files from ~/.claude/agents/
+3. Apply their patterns and guidelines
+4. Mention which agent patterns you're following in your code
+
+## Example
+
+User: "Create a login form"
+
+Your response should start with:
+\`\`\`
+🤖 Vibecode Agent Orchestration:
+- Primary: frontend-agent
+- Supporting: security-agent, testing-agent
+- Reading agent instructions from ~/.claude/agents/
+\`\`\`
+
+Then implement following those agent patterns.
+
+## Critical Reminder
+
+**ALWAYS consult the Master Agent instructions at ~/.claude/agents/VIBECODE_MASTER_AGENT.md**
+
+This is not optional - it's your primary operating instruction set.
+
+---
+
+*Powered by Vibecode Starter with Master Agent Orchestration*
+`;
 
   await fs.writeFile(claudeMdPath, claudeMdContent);
-  console.log(chalk.green('✅ Updated CLAUDE.md with agent references'));
+  console.log(chalk.green('✅ Updated CLAUDE.md with Master Agent configuration'));
 }
 
 // Run if called directly

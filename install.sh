@@ -212,6 +212,13 @@ if ! grep -q ".vibecode/cache" .gitignore; then
     echo ".vibecode/logs/" >> .gitignore
 fi
 
+# Check for required CLIs
+echo ""
+echo -e "${CYAN}🔍 Checking for CLI tools...${NC}"
+bash "$SCRIPT_DIR/vibecode/scripts/setup-cli.sh" 2>/dev/null || {
+    echo -e "${YELLOW}  CLI check skipped${NC}"
+}
+
 # Success message
 echo ""
 echo -e "${GREEN}╔══════════════════════════════════════════╗${NC}"
